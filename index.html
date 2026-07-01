@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='15' y='10' width='70' height='80' rx='12' stroke='%232563EB' stroke-width='8'/%3E%3Cline x1='25' y1='26' x2='75' y2='26' stroke='%232563EB' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='35' cy='20' r='4' fill='%232563EB'/%3E%3Ccircle cx='47' cy='20' r='2' fill='%232563EB'/%3E%3Ccircle cx='55' cy='20' r='2' fill='%232563EB'/%3E%3Ccircle cx='50' cy='60' r='24' stroke='%232563EB' stroke-width='6'/%3E%3Cpath d='M50 48C50 48 58 56.5 58 61.5C58 65.9183 54.4183 69.5 50 69.5C45.5817 69.5 42 65.9183 42 61.5C42 56.5 50 48 50 48Z' fill='%232563EB'/%3E%3C/svg%3E">
+  <title>FreshFold Laundry - Premium Dry Cleaning & Laundry Pickup</title>
+  <meta name="description" content="Premium door-to-door laundry & dry cleaning service. Fast turnaround, eco-friendly detergents, and expert care. Book online today!">
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB',
+            secondary: '#38BDF8',
+            accent: '#0EA5E9',
+            success: '#22C55E',
+            text: '#1E293B',
+            darkBg: '#0F172A',
+            lightBg: '#F8FAFC',
+            grayCustom: '#64748B'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#F8FAFC] dark:bg-[#0F172A] text-[#1E293B] dark:text-slate-200 transition-colors duration-300">
+
+  <!-- ==========================================
+       HEADER / NAVBAR
+       ========================================== -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 py-5 transition-all duration-300 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo -->
+      <a href="index.html" class="flex items-center group">
+        <svg class="h-9 w-9 mr-2 transition-transform duration-300 group-hover:rotate-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15" y="10" width="70" height="80" rx="12" class="stroke-blue-600 dark:stroke-blue-400" stroke-width="8" />
+          <line x1="25" y1="26" x2="75" y2="26" class="stroke-blue-600 dark:stroke-blue-400" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="35" cy="20" r="4" class="fill-blue-600 dark:fill-blue-400"/>
+          <circle cx="47" cy="20" r="2" class="fill-blue-600 dark:fill-blue-400"/>
+          <circle cx="55" cy="20" r="2" class="fill-blue-600 dark:fill-blue-400"/>
+          <circle cx="50" cy="60" r="24" class="stroke-blue-600 dark:stroke-blue-400" stroke-width="6" />
+          <path d="M50 48C50 48 58 56.5 58 61.5C58 65.9183 54.4183 69.5 50 69.5C45.5817 69.5 42 65.9183 42 61.5C42 56.5 50 48 50 48Z" class="fill-blue-600 dark:fill-blue-400"/>
+        </svg>
+        <span class="font-semibold text-xl text-slate-800 dark:text-white group-hover:text-primary transition-colors">FreshFold</span>
+      </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden xl:flex items-center xl:space-x-2">
+          <a href="index.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-primary hover:text-primary transition-colors">Home</a>
+          <a href="home2.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home 2</a>
+          <a href="about.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About Us</a>
+          <a href="services.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Services</a>
+          <a href="gallery.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Gallery</a>
+          <a href="pricing.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Pricing</a>
+          <a href="contact.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
+          <a href="portal.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">User Portal</a>
+        </nav>
+
+        <!-- Right Side Toggles & Actions -->
+        <div class="hidden xl:flex items-center xl:space-x-4">
+          <!-- LTR/RTL Toggle -->
+          <button class="dir-toggle-btn p-1.5 xl:p-2 rounded-lg text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-200" aria-label="Toggle language direction">
+            <span class="dir-label text-[10px] xl:text-xs font-bold tracking-wider uppercase">RTL</span>
+          </button>
+
+          <!-- Light/Dark Toggle -->
+          <button class="theme-toggle-btn p-1.5 xl:p-2 rounded-lg text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-200" aria-label="Toggle theme">
+            <!-- Moon Icon (Light Mode Active) -->
+            <svg class="theme-moon-icon h-4.5 w-4.5 xl:h-5 xl:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <!-- Sun Icon (Dark Mode Active) -->
+            <svg class="theme-sun-icon h-4.5 w-4.5 xl:h-5 xl:w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707m12.728-12.728l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+            </svg>
+          </button>
+
+          <!-- Action Buttons -->
+          <a href="login.html" class="text-xs xl:text-sm font-semibold text-gray-700 dark:text-slate-200 hover:text-primary transition-colors">Login</a>
+          <a href="booking.html" class="ripple-btn px-4 xl:px-5 py-2 xl:py-2.5 bg-gradient-to-r from-primary to-secondary text-white text-xs xl:text-sm font-semibold rounded-full shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 hover:-translate-y-0.5 transition-all duration-300">
+            Book Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Controls -->
+        <div class="flex items-center space-x-2 xl:hidden">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none" aria-expanded="false" aria-label="Toggle mobile menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu (Animated hamburger target) -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden xl:hidden flex-col bg-white dark:bg-slate-900 px-6 py-6 transition-all duration-300 overflow-y-auto max-h-screen pb-12">
+    <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center">
+        <svg class="h-8 w-8 text-primary mr-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15" y="10" width="70" height="80" rx="12" stroke="currentColor" stroke-width="8" fill="none"/>
+          <line x1="25" y1="26" x2="75" y2="26" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="50" cy="60" r="24" stroke="currentColor" stroke-width="6" fill="none"/>
+        </svg>
+        <span class="font-display font-semibold text-lg dark:text-white">FreshFold</span>
+      </div>
+      <button id="mobile-menu-close" class="p-2 rounded-lg text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <nav class="flex flex-col space-y-4 text-center">
+      <a href="index.html" class="text-xl font-medium text-primary py-2 border-b border-gray-100 dark:border-slate-800">Home</a>
+      <a href="home2.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Home 2</a>
+      <a href="about.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">About Us</a>
+      <a href="services.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Services</a>
+      <a href="gallery.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Gallery</a>
+      <a href="pricing.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Pricing</a>
+      <a href="contact.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Contact</a>
+      <a href="portal.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2">User Portal</a>
+      
+      <div class="pt-6 flex flex-col space-y-4">
+        <a href="login.html" class="w-full text-center py-3 border border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-200 font-semibold rounded-full">Login</a>
+        <a href="booking.html" class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg text-center">Book Now</a>
+      </div>
+
+      <!-- Mobile Toggles Inside Menu Bar -->
+      <div class="mt-6 pt-6 border-t border-gray-100 dark:border-slate-800 flex items-center justify-center space-x-4">
+        <button class="dir-toggle-btn p-3.5 rounded-2xl bg-gray-50 dark:bg-slate-800 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white flex items-center justify-center gap-2 w-1/2" aria-label="Toggle language direction">
+          <span class="dir-label text-xs font-bold uppercase">RTL</span>
+        </button>
+        <button class="theme-toggle-btn p-3.5 rounded-2xl bg-gray-50 dark:bg-slate-800 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white flex items-center justify-center w-1/2" aria-label="Toggle theme">
+          <svg class="theme-moon-icon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+          <svg class="theme-sun-icon h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707m12.728-12.728l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <!-- ==========================================
+       HERO SECTION WITH BG IMAGE
+       ========================================== -->
+<section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-white dark:bg-slate-900 transition-colors duration-300">
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-300 text-sm font-semibold uppercase tracking-wider border border-blue-500/20">
+          ✨ Premium Laundry Service
+        </div>
+        <h1 class="font-display font-bold text-4xl md:text-6xl text-slate-900 dark:text-white leading-tight">
+          Professional Laundry & <span class="text-primary">Dry Cleaning</span> at Your Doorstep
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
+          Save time with fast pickup, expert cleaning, eco-friendly care, and doorstep delivery. Clean clothes are just a tap away.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+          <button class="open-booking-modal-btn w-full sm:w-auto px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg shadow-blue-500/25">
+            Book Pickup
+          </button>
+          <a href="services.html" class="w-full sm:w-auto text-center px-8 py-4 bg-slate-100 dark:bg-white/10 text-slate-900 dark:text-white border border-slate-200 dark:border-white/20 hover:bg-slate-200 dark:hover:bg-white/20 font-semibold rounded-full transition-all">
+            View Services
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 relative flex justify-center items-center">
+        <div class="relative w-full max-w-[500px] aspect-square flex items-center justify-center">
+          
+          <div class="w-[80%] h-[80%] relative z-10 rounded-3xl overflow-hidden aspect-square border-8 border-white dark:border-slate-800 shadow-2xl">
+            <img src="assets/indexhero" alt="Laundry Service" class="w-full h-full object-cover">
+          </div>
+
+          <div class="absolute -top-3 left-0 bg-white dark:bg-slate-900/95 backdrop-blur-md p-3 rounded-xl shadow-xl border border-slate-200 dark:border-white/10 flex items-center space-x-3">
+            <div class="p-2 bg-blue-100 dark:bg-blue-500/20 rounded-lg text-blue-600 dark:text-blue-300">✓</div>
+            <p class="text-sm font-semibold text-slate-900 dark:text-white">Scheduled Pickup</p>
+          </div>
+          
+        
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+  <!-- ==========================================
+       STATISTICS SECTION (Animated Counters)
+       ========================================== -->
+  <section class="py-10 sm:py-12 bg-white dark:bg-slate-900 border-y border-gray-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-8 text-center">
+        <div>
+          <p class="counter-val font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-primary" data-target="10000" data-suffix="+">0</p>
+          <p class="text-xs sm:text-sm text-gray-500 dark:text-slate-400 mt-1.5 sm:mt-2 font-medium">Happy Customers</p>
+        </div>
+        <div>
+          <p class="counter-val font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-primary" data-target="250000" data-suffix="+">0</p>
+          <p class="text-xs sm:text-sm text-gray-500 dark:text-slate-400 mt-1.5 sm:mt-2 font-medium">Clothes Cleaned</p>
+        </div>
+        <div>
+          <p class="counter-val font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-primary" data-target="35" data-suffix="+">0</p>
+          <p class="text-xs sm:text-sm text-gray-500 dark:text-slate-400 mt-1.5 sm:mt-2 font-medium">Pickup Areas</p>
+        </div>
+        <div>
+          <p class="counter-val font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-primary" data-target="99" data-suffix="%">0</p>
+          <p class="text-xs sm:text-sm text-gray-500 dark:text-slate-400 mt-1.5 sm:mt-2 font-medium">Satisfaction Rate</p>
+        </div>
+        <div class="col-span-2 sm:col-span-3 md:col-span-1">
+          <p class="counter-val font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-primary" data-target="15" data-suffix="+">0</p>
+          <p class="text-xs sm:text-sm text-gray-500 dark:text-slate-400 mt-1.5 sm:mt-2 font-medium">Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WHY CHOOSE US SECTION
+       ========================================== -->
+  <section class="py-14 sm:py-20 lg:py-28 bg-[#F8FAFC] dark:bg-[#0F172A]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 reveal-on-scroll reveal-fade-up">
+        <h2 class="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-slate-800 dark:text-white mb-3 sm:mb-4">Why Customers Trust FreshFold</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed">We deliver unmatched quality and convenience to ensure your garments always look brand new.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8">
+        
+        <!-- Reason 1 -->
+        <div class="bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary mb-5 sm:mb-6 flex-shrink-0">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-slate-800 dark:text-white mb-3">Transparent Pricing</h3>
+          <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400 leading-relaxed min-h-[48px]">No hidden charges, zero subscription fees. Pay only for what you wash with complete visibility.</p>
+        </div>
+
+        <!-- Reason 2 -->
+        <div class="bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-900/30 flex items-center justify-center text-teal-600 mb-5 sm:mb-6 flex-shrink-0">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-slate-800 dark:text-white mb-3">Eco-Friendly Care</h3>
+          <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400 leading-relaxed min-h-[48px]">We use biodegradable solvents and gentle detergents to protect both your garments and the ecosystem.</p>
+        </div>
+
+        <!-- Reason 3 -->
+        <div class="bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col sm:col-span-2 md:col-span-1">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 mb-5 sm:mb-6 flex-shrink-0">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg sm:text-xl text-slate-800 dark:text-white mb-3">Rapid Turnaround</h3>
+          <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400 leading-relaxed min-h-[48px]">Your laundry returned crisp, clean, and folded within 24 hours. Express options available.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SERVICES OVERVIEW SECTION
+       ========================================== -->
+  <section class="py-14 sm:py-20 lg:py-28 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 reveal-on-scroll reveal-fade-up gap-4">
+        <div class="max-w-2xl">
+          <h2 class="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-slate-800 dark:text-white mb-3 sm:mb-4">Our Services</h2>
+          <p class="text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed">From casual garments to business uniforms, we treat all fabrics with specialized cleaning processes.</p>
+        </div>
+        <a href="services.html" class="inline-flex items-center text-primary font-semibold hover:text-blue-700 transition-colors whitespace-nowrap">
+          Explore All Services
+          <svg class="h-5 w-5 ml-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8 services-card-grid">
+        
+        <!-- Service 1: Wash & Fold -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col">
+          <div class="image-zoom-container h-44 sm:h-48">
+            <img src="assets/Laundry Wash & Fold" alt="Laundry Wash & Fold" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display font-semibold text-base sm:text-lg text-slate-800 dark:text-white mb-2">Laundry Wash &amp; Fold</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-3 sm:mb-4 min-h-[40px] sm:min-h-[48px]">Everyday wear washed, tumble dried, and folded beautifully.</p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-5 sm:mb-6 text-left list-disc list-inside">
+                <li>Color &amp; white separation</li>
+                <li>Hypoallergenic sanitizers</li>
+                <li>Tumbled dry &amp; soft folded</li>
+              </ul>
+            </div>
+            <button class="open-booking-modal-btn w-full py-2.5 bg-white dark:bg-slate-700 text-primary dark:text-white border border-gray-200 dark:border-slate-600 font-semibold rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 text-sm">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2: Dry Cleaning -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col">
+          <div class="image-zoom-container h-44 sm:h-48">
+            <img src="assets/Premium Dry Cleaning" alt="Dry Cleaning" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display font-semibold text-base sm:text-lg text-slate-800 dark:text-white mb-2">Premium Dry Cleaning</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-3 sm:mb-4 min-h-[40px] sm:min-h-[48px]">Solvent-based cleaning for delicate garments, coats, and silk dresses.</p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-5 sm:mb-6 text-left list-disc list-inside">
+                <li>Garment spotting checks</li>
+                <li>Hydrocarbon safe solvent</li>
+                <li>Hanger shape protection</li>
+              </ul>
+            </div>
+            <button class="open-booking-modal-btn w-full py-2.5 bg-white dark:bg-slate-700 text-primary dark:text-white border border-gray-200 dark:border-slate-600 font-semibold rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 text-sm">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3: Steam Pressing -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col">
+          <div class="image-zoom-container h-44 sm:h-48">
+            <img src="assets/Steam Ironing" alt="Steam Pressing" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display font-semibold text-base sm:text-lg text-slate-800 dark:text-white mb-2">Steam Ironing</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-3 sm:mb-4 min-h-[40px] sm:min-h-[48px]">Eliminate all folds. Wrinkle-free shirts, trousers, and uniforms.</p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-5 sm:mb-6 text-left list-disc list-inside">
+                <li>Professional press tables</li>
+                <li>Collar &amp; cuff sizing block</li>
+                <li>Garment bag dust covers</li>
+              </ul>
+            </div>
+            <button class="open-booking-modal-btn w-full py-2.5 bg-white dark:bg-slate-700 text-primary dark:text-white border border-gray-200 dark:border-slate-600 font-semibold rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 text-sm">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4: Express Delivery -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col">
+          <div class="image-zoom-container h-44 sm:h-48">
+            <img src="assets/Express Same-Day" alt="Express Delivery" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display font-semibold text-base sm:text-lg text-slate-800 dark:text-white mb-2">Express Same-Day</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-3 sm:mb-4 min-h-[40px] sm:min-h-[48px]">In a hurry? We wash, dry, and return your clothes in less than 12 hours.</p>
+              <ul class="text-xs text-slate-400 space-y-1.5 mb-5 sm:mb-6 text-left list-disc list-inside">
+                <li>Priority sorting queue</li>
+                <li>Accelerated dry cycles</li>
+                <li>Door-to-door in 12 hours</li>
+              </ul>
+            </div>
+            <button class="open-booking-modal-btn w-full py-2.5 bg-white dark:bg-slate-700 text-primary dark:text-white border border-gray-200 dark:border-slate-600 font-semibold rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 text-sm">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       HOW IT WORKS SECTION
+       ========================================== -->
+  <section class="py-14 sm:py-20 lg:py-28 bg-[#F8FAFC] dark:bg-[#0F172A] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 reveal-on-scroll reveal-fade-up">
+        <h2 class="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-slate-800 dark:text-white mb-3 sm:mb-4">How FreshFold Works</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed">Get clean clothes delivered back in 5 easy steps.</p>
+      </div>
+
+      <div class="relative">
+        <!-- Connecting Line for timeline desktop -->
+        <div class="hidden lg:block absolute top-10 left-12 right-12 h-1 bg-gradient-to-r from-primary to-secondary z-0 opacity-30"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 relative z-10">
+          
+          <!-- Step 1 -->
+          <div class="bg-white dark:bg-slate-800 p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 text-center hover-lift reveal-on-scroll reveal-fade-up flex flex-col items-center">
+            <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-full bg-primary text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl mx-auto mb-4 sm:mb-5 shadow-lg shadow-blue-500/20">1</div>
+            <h3 class="font-display font-semibold text-sm sm:text-base text-slate-800 dark:text-white mb-2">Book Online</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed min-h-[40px]">Choose services, pickup date, and time slot via portal.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-white dark:bg-slate-800 p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 text-center hover-lift reveal-on-scroll reveal-fade-up flex flex-col items-center" style="transition-delay: 100ms;">
+            <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-full bg-primary text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl mx-auto mb-4 sm:mb-5 shadow-lg shadow-blue-500/20">2</div>
+            <h3 class="font-display font-semibold text-sm sm:text-base text-slate-800 dark:text-white mb-2">We Pickup</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed min-h-[40px]">Our driver collects your items in personalized laundry bags.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-white dark:bg-slate-800 p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 text-center hover-lift reveal-on-scroll reveal-fade-up flex flex-col items-center" style="transition-delay: 200ms;">
+            <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-full bg-primary text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl mx-auto mb-4 sm:mb-5 shadow-lg shadow-blue-500/20">3</div>
+            <h3 class="font-display font-semibold text-sm sm:text-base text-slate-800 dark:text-white mb-2">Expert Cleaning</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed min-h-[40px]">We isolate, sanitize, and treat clothes in advanced facilities.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="bg-white dark:bg-slate-800 p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 text-center hover-lift reveal-on-scroll reveal-fade-up flex flex-col items-center" style="transition-delay: 300ms;">
+            <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-full bg-primary text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl mx-auto mb-4 sm:mb-5 shadow-lg shadow-blue-500/20">4</div>
+            <h3 class="font-display font-semibold text-sm sm:text-base text-slate-800 dark:text-white mb-2">Quality Check</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed min-h-[40px]">Detailed check ensures zero stains and premium iron folds.</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="bg-white dark:bg-slate-800 p-5 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 text-center sm:col-span-2 lg:col-span-1 hover-lift reveal-on-scroll reveal-fade-up flex flex-col items-center" style="transition-delay: 400ms;">
+            <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-full bg-primary text-white flex items-center justify-center font-display font-bold text-lg sm:text-xl mx-auto mb-4 sm:mb-5 shadow-lg shadow-blue-500/20">5</div>
+            <h3 class="font-display font-semibold text-sm sm:text-base text-slate-800 dark:text-white mb-2">Doorstep Delivery</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed min-h-[40px]">Returned within schedule, clean, fresh, and ready to wear.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURED PRICING SECTION
+       ========================================== -->
+  <section class="py-14 sm:py-20 lg:py-28 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 reveal-on-scroll reveal-fade-up">
+        <h2 class="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-slate-800 dark:text-white mb-3 sm:mb-4">Simple, Affordable Pricing</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed">Choose a laundry plan that fits your schedule and laundry load volume.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto">
+        
+        <!-- Plan 1 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 flex flex-col justify-between hover-lift reveal-on-scroll reveal-fade-up">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-grayCustom mb-2 block">Everyday Basic</span>
+            <h3 class="font-display font-semibold text-2xl text-slate-800 dark:text-white mb-4">Basic Plan</h3>
+            <div class="flex items-baseline mb-6">
+              <span class="text-4xl font-display font-semibold dark:text-white">$29</span>
+              <span class="text-gray-500 ml-1">/ bag</span>
+            </div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 min-h-[48px]">Perfect for small households looking for weekly wash-and-fold services.</p>
+            <ul class="space-y-3.5 mb-8 text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                Up to 10 lbs Wash & Fold
+              </li>
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                48-Hour Return Window
+              </li>
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                Standard Eco-Detergents
+              </li>
+              <li class="flex items-center opacity-40">
+                <svg class="h-4 w-4 text-gray-400 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+                Same-Day Priority Booking
+              </li>
+            </ul>
+          </div>
+          <button class="open-booking-modal-btn w-full py-3 bg-white dark:bg-slate-700 text-primary dark:text-white border border-gray-200 dark:border-slate-600 font-semibold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300">
+            Book Now
+          </button>
+        </div>
+
+        <!-- Plan 2 (Popular) -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border-2 border-primary dark:border-blue-500 relative flex flex-col justify-between shadow-xl hover-lift reveal-on-scroll reveal-fade-up md:-translate-y-2">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-primary to-secondary text-white text-xs font-semibold rounded-full uppercase tracking-wider">
+            Most Popular
+          </div>
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">Complete Care</span>
+            <h3 class="font-display font-semibold text-2xl text-slate-800 dark:text-white mb-4">Standard Plan</h3>
+            <div class="flex items-baseline mb-6">
+              <span class="text-4xl font-display font-semibold dark:text-white">$49</span>
+              <span class="text-gray-500 ml-1">/ bag</span>
+            </div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 min-h-[48px]">Our most loved package combining custom options with steam pressing care.</p>
+            <ul class="space-y-3.5 mb-8 text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                Up to 20 lbs Wash, Dry & Fold
+              </li>
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                24-Hour Return Window
+              </li>
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                Steam Ironing Included
+              </li>
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                Delicate Fabric Protection
+              </li>
+            </ul>
+          </div>
+          <button class="open-booking-modal-btn w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300">
+            Book Now
+          </button>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 border border-gray-100 dark:border-slate-700 flex flex-col justify-between hover-lift reveal-on-scroll reveal-fade-up">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-grayCustom mb-2 block">Heavy Load</span>
+            <h3 class="font-display font-semibold text-2xl text-slate-800 dark:text-white mb-4">Premium Plan</h3>
+            <div class="flex items-baseline mb-6">
+              <span class="text-4xl font-display font-semibold dark:text-white">$79</span>
+              <span class="text-gray-500 ml-1">/ bag</span>
+            </div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 min-h-[48px]">Heavy laundry weight loads or customized fabric instructions.</p>
+            <ul class="space-y-3.5 mb-8 text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                Up to 35 lbs Wash & Steam Press
+              </li>
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                Same-Day Delivery Priority
+              </li>
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                Scent Preferences & Stain removal
+              </li>
+              <li class="flex items-center">
+                <svg class="h-4 w-4 text-green-500 mr-2.5 rtl:ml-2.5 rtl:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                Shoe/Curtain cleaning discounts
+              </li>
+            </ul>
+          </div>
+          <button class="open-booking-modal-btn w-full py-3 bg-white dark:bg-slate-700 text-primary dark:text-white border border-gray-200 dark:border-slate-600 font-semibold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300">
+            Book Now
+          </button>
+        </div>
+
+      </div>
+      <div class="mt-12 text-center">
+        <a href="pricing.html" class="inline-flex items-center text-primary font-semibold hover:text-blue-700 transition-colors">
+          View all plans & Dry Cleaning price tables
+          <svg class="h-5 w-5 ml-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PICKUP AREAS
+       ========================================== -->
+  <section class="py-14 sm:py-20 bg-gray-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div class="lg:col-span-5 space-y-5 sm:space-y-6 reveal-on-scroll reveal-fade-left">
+          <h2 class="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-slate-800 dark:text-white leading-tight">
+            We Serve Your Neighborhood
+          </h2>
+          <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400 leading-relaxed">
+            FreshFold operates across major metropolitan areas and commercial sub-districts. Enter your address to check pickup availability in seconds.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3 rtl:space-x-reverse">
+              <span class="p-1 bg-blue-100 dark:bg-blue-900/30 rounded text-primary mt-1">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <p class="text-sm text-slate-600 dark:text-slate-300 font-medium">Free pickup for order values over $30</p>
+            </div>
+            <div class="flex items-start space-x-3 rtl:space-x-reverse">
+              <span class="p-1 bg-blue-100 dark:bg-blue-900/30 rounded text-primary mt-1">
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <p class="text-sm text-slate-600 dark:text-slate-300 font-medium">Eco-friendly logistics routing for zero emissions</p>
+            </div>
+          </div>
+          <!-- Zip Search form mock -->
+          <div class="flex rounded-lg overflow-hidden border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-1">
+            <input type="text" placeholder="Enter Zip Code" class="px-4 py-3 bg-transparent text-sm w-full outline-none text-slate-700 dark:text-slate-300">
+            <button class="bg-primary hover:bg-blue-700 text-white text-sm font-semibold px-6 py-3 rounded-md transition-colors whitespace-nowrap">
+              Check Area
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 reveal-on-scroll reveal-fade-right">
+          <!-- List of serviced areas -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div class="bg-white dark:bg-slate-950 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-slate-800 text-center">
+              <h4 class="font-display font-semibold text-slate-800 dark:text-white">Downtown</h4>
+              <p class="text-xs text-primary mt-1 font-medium">Available 24/7</p>
+            </div>
+            <div class="bg-white dark:bg-slate-950 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-slate-800 text-center">
+              <h4 class="font-display font-semibold text-slate-800 dark:text-white">West End</h4>
+              <p class="text-xs text-primary mt-1 font-medium">Available 24/7</p>
+            </div>
+            <div class="bg-white dark:bg-slate-950 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-slate-800 text-center">
+              <h4 class="font-display font-semibold text-slate-800 dark:text-white">North Suburbs</h4>
+              <p class="text-xs text-primary mt-1 font-medium">Mon-Sat Delivery</p>
+            </div>
+            <div class="bg-white dark:bg-slate-950 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-slate-800 text-center">
+              <h4 class="font-display font-semibold text-slate-800 dark:text-white">Waterfront</h4>
+              <p class="text-xs text-primary mt-1 font-medium">Available 24/7</p>
+            </div>
+            <div class="bg-white dark:bg-slate-950 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-slate-800 text-center">
+              <h4 class="font-display font-semibold text-slate-800 dark:text-white">Financial District</h4>
+              <p class="text-xs text-primary mt-1 font-medium">Corporate Express</p>
+            </div>
+            <div class="bg-white dark:bg-slate-950 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-slate-800 text-center">
+              <h4 class="font-display font-semibold text-slate-800 dark:text-white">East Heights</h4>
+              <p class="text-xs text-primary mt-1 font-medium">Daily Pickups</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- ==========================================
+       CUSTOMER TESTIMONIALS (Equal-Height Cards Grid)
+       ========================================== --  <section class="py-14 sm:py-20 lg:py-28 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10 sm:mb-16">
+        <h2 class="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-slate-800 dark:text-white mb-3 sm:mb-4">What Our Clients Say</h2>
+        <div class="h-1.5 w-16 bg-primary mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Testimonials Card Grid (Equal Height) -->
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8">
+        
+        <!-- Card 1 -->
+        <div class="bg-gray-50 dark:bg-slate-800 p-6 sm:p-8 rounded-2xl border border-gray-100 dark:border-slate-700 shadow-sm flex flex-col justify-between hover-lift transition-all duration-300">
+          <div class="space-y-4 sm:space-y-6 text-center">
+            <img src="assets/t1" alt="Sarah Connor" class="h-14 sm:h-16 w-14 sm:w-16 rounded-full object-cover border-2 border-primary mx-auto shadow-md">
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 italic leading-relaxed min-h-[72px]">
+              "FreshFold completely changed how I manage my weekly chores. Booking a pickup takes less than a minute, and my shirts come back flawlessly ironed on hangers. Absolute life saver!"
+            </p>
+          </div>
+          <div class="mt-4 sm:mt-6 border-t border-gray-200/50 dark:border-slate-700/50 pt-4 text-center">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-sm">Sarah Connor</h4>
+            <p class="text-xs text-grayCustom mt-0.5">West End, Customer since 2024</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-50 dark:bg-slate-800 p-6 sm:p-8 rounded-2xl border border-gray-100 dark:border-slate-700 shadow-sm flex flex-col justify-between hover-lift transition-all duration-300">
+          <div class="space-y-4 sm:space-y-6 text-center">
+            <img src="assets/t2" alt="Michael Davis" class="h-14 sm:h-16 w-14 sm:w-16 rounded-full object-cover border-2 border-primary mx-auto shadow-md">
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 italic leading-relaxed min-h-[72px]">
+              "Highly professional staff! I sent in my premium wedding gown for dry cleaning and was nervous about the results. It came back pristine, packaged in an archival preservation box. Outstanding!"
+            </p>
+          </div>
+          <div class="mt-4 sm:mt-6 border-t border-gray-200/50 dark:border-slate-700/50 pt-4 text-center">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-sm">Michael Davis</h4>
+            <p class="text-xs text-grayCustom mt-0.5">Downtown, Customer since 2023</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-50 dark:bg-slate-800 p-6 sm:p-8 rounded-2xl border border-gray-100 dark:border-slate-700 shadow-sm flex flex-col justify-between hover-lift transition-all duration-300 sm:col-span-2 md:col-span-1">
+          <div class="space-y-4 sm:space-y-6 text-center">
+            <img src="assets/t3" alt="Jessica Taylor" class="h-14 sm:h-16 w-14 sm:w-16 rounded-full object-cover border-2 border-primary mx-auto shadow-md">
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 italic leading-relaxed min-h-[72px]">
+              "Love the eco-friendly washing process. My clothes smell fresh without that heavy chemical detergent odor. The delivery driver was prompt and extremely polite!"
+            </p>
+          </div>
+          <div class="mt-4 sm:mt-6 border-t border-gray-200/50 dark:border-slate-700/50 pt-4 text-center">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-sm">Jessica Taylor</h4>
+            <p class="text-xs text-grayCustom mt-0.5">East Heights, Customer since 2023</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ==========================================
+       MOBILE APP PREVIEW
+       ========================================== -->
+  <section class="py-14 sm:py-20 lg:py-28 bg-[#F8FAFC] dark:bg-[#0F172A] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- App Details -->
+        <div class="lg:col-span-6 space-y-6 reveal-on-scroll reveal-fade-left">
+          <span class="text-xs font-semibold uppercase tracking-wider text-primary">Order tracking</span>
+          <h2 class="font-display font-semibold text-3xl sm:text-4xl text-slate-800 dark:text-white leading-tight">
+            Manage Everything on Your Phone
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+            Download the FreshFold mobile app to place scheduled pickups, get real-time laundry statuses, chat with delivery drivers, and access exclusive loyalty rewards.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <!-- App Store button mock -->
+            <a href="#" class="inline-flex items-center bg-[#1E293B] text-white px-5 py-3 rounded-xl hover:bg-slate-800 transition-colors border border-slate-700">
+              <svg class="h-6 w-6 mr-3 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.22.67-2.94 1.5-.63.73-1.18 1.87-1.03 2.97 1.12.09 2.27-.56 2.98-1.41z"/>
+              </svg>
+              <div class="text-left">
+                <p class="text-[9px] uppercase tracking-wider text-gray-400 font-semibold leading-none">Download on the</p>
+                <p class="text-sm font-semibold leading-none mt-1">App Store</p>
+              </div>
+            </a>
+            
+            <!-- Google Play button mock -->
+            <a href="#" class="inline-flex items-center bg-[#1E293B] text-white px-5 py-3 rounded-xl hover:bg-slate-800 transition-colors border border-slate-700">
+              <svg class="h-6 w-6 mr-3 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 5.27v13.46c0 .94.76 1.7 1.7 1.7h13.46c.94 0 1.7-.76 1.7-1.7V5.27c0-.94-.76-1.7-1.7-1.7H4.7c-.94 0-1.7.76-1.7 1.7zm13.11 7.24l-8.23 4.75c-.38.22-.85-.05-.85-.49V7.23c0-.44.47-.71.85-.49l8.23 4.75c.38.22.38.76 0 .98z"/>
+              </svg>
+              <div class="text-left">
+                <p class="text-[9px] uppercase tracking-wider text-gray-400 font-semibold leading-none">Get it on</p>
+                <p class="text-sm font-semibold leading-none mt-1">Google Play</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone Mockup -->
+        <div class="lg:col-span-6 flex justify-center reveal-on-scroll reveal-fade-right">
+          <div class="relative w-72 h-[550px] bg-slate-900 rounded-[40px] p-3 shadow-2xl border-4 border-slate-700">
+            <!-- Screen notch -->
+            <div class="absolute top-4 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-900 rounded-full z-20"></div>
+            
+            <!-- Mobile App Screen -->
+            <div class="w-full h-full bg-white dark:bg-slate-950 rounded-[30px] overflow-hidden relative flex flex-col justify-between p-4 pt-8">
+              <!-- App Header -->
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <p class="text-[10px] text-gray-400">Welcome Back</p>
+                  <h4 class="text-xs font-bold text-slate-800 dark:text-white">Alex Johnson</h4>
+                </div>
+                <div class="w-7 h-7 bg-primary/10 rounded-full flex items-center justify-center text-primary text-xs font-bold">AJ</div>
+              </div>
+
+              <!-- Reward Points Widget -->
+              <div class="bg-gradient-to-r from-primary to-secondary p-3 rounded-xl text-white text-xs mb-4">
+                <p class="text-[9px] uppercase opacity-75">Loyalty Rewards</p>
+                <div class="flex justify-between items-center mt-1">
+                  <span class="font-bold text-base">450 Points</span>
+                  <span class="bg-white/20 px-2 py-0.5 rounded text-[9px]">Gold Status</span>
+                </div>
+              </div>
+
+              <!-- Tracker Widget in App -->
+              <div class="bg-gray-50 dark:bg-slate-900 p-3 rounded-xl border border-gray-100 dark:border-slate-800 flex-1 flex flex-col justify-between">
+                <div>
+                  <span class="text-[9px] font-bold text-primary bg-blue-100 dark:bg-blue-900/30 px-2 py-0.5 rounded-full uppercase">Order #7890</span>
+                  <p class="text-[10px] text-gray-400 mt-1">Status: Washing & Ironing</p>
+                </div>
+                <!-- Mini Progress Line -->
+                <div class="space-y-2.5 my-3">
+                  <div class="flex items-center text-[10px] text-green-500">
+                    <span class="w-3.5 h-3.5 rounded-full bg-green-500 text-white flex items-center justify-center text-[8px] mr-2">✓</span>
+                    Driver Picked Up
+                  </div>
+                  <div class="flex items-center text-[10px] text-primary">
+                    <span class="w-3.5 h-3.5 rounded-full bg-primary text-white flex items-center justify-center text-[8px] mr-2">●</span>
+                    In Drum Wash Cycle
+                  </div>
+                  <div class="flex items-center text-[10px] text-gray-400">
+                    <span class="w-3.5 h-3.5 rounded-full bg-gray-200 dark:bg-slate-800 text-transparent flex items-center justify-center text-[8px] mr-2"></span>
+                    Steam Folding Ready
+                  </div>
+                </div>
+                <button class="w-full bg-primary text-white text-[10px] py-2 rounded-lg font-bold">Track Map</button>
+              </div>
+
+              <!-- Quick action bar -->
+              <div class="grid grid-cols-2 gap-2 mt-3">
+                <div class="bg-blue-50 dark:bg-slate-900 p-2.5 rounded-lg text-center border border-blue-100 dark:border-slate-800">
+                  <p class="text-[10px] font-bold text-slate-800 dark:text-white">Book pickup</p>
+                </div>
+                <div class="bg-sky-50 dark:bg-slate-900 p-2.5 rounded-lg text-center border border-sky-100 dark:border-slate-800">
+                  <p class="text-[10px] font-bold text-slate-800 dark:text-white">Chat support</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE WEIGHT ESTIMATOR CALCULATOR
+       ========================================== -->
+  <section class="py-20 lg:py-28 bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll reveal-fade-up">
+        <span class="text-xs font-semibold uppercase tracking-wider text-primary">Weight Estimator</span>
+        <h2 class="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-slate-800 dark:text-white mt-2">Estimate Your Laundry Load</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-slate-400 mt-2">Select the approximate number of clothes to estimate your total weight and see our recommended plan.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-12 items-start max-w-5xl mx-auto">
+        <!-- Item Pickers (Left) -->
+        <div class="lg:col-span-7 bg-gray-50 dark:bg-slate-800/50 p-8 rounded-3xl border border-gray-150 dark:border-slate-700 space-y-6">
+          <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white">Add Items to Your Bag</h3>
+          
+          <div class="divide-y divide-gray-200 dark:divide-slate-700">
+            <!-- Shirts -->
+            <div class="flex justify-between items-center py-4">
+              <div>
+                <p class="font-semibold text-sm text-slate-800 dark:text-white">Shirts & Blouses</p>
+                <p class="text-xs text-grayCustom">Approx. 0.5 lbs each</p>
+              </div>
+              <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                <button onclick="changeQty('shirts', -1)" class="w-8 h-8 rounded-full bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 flex items-center justify-center font-bold text-slate-700 dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">-</button>
+                <span id="qty-shirts" class="w-8 text-center font-semibold text-sm dark:text-white">0</span>
+                <button onclick="changeQty('shirts', 1)" class="w-8 h-8 rounded-full bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 flex items-center justify-center font-bold text-slate-700 dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">+</button>
+              </div>
+            </div>
+
+            <!-- Pants -->
+            <div class="flex justify-between items-center py-4">
+              <div>
+                <p class="font-semibold text-sm text-slate-800 dark:text-white">Pants & Jeans</p>
+                <p class="text-xs text-grayCustom">Approx. 1.0 lbs each</p>
+              </div>
+              <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                <button onclick="changeQty('pants', -1)" class="w-8 h-8 rounded-full bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 flex items-center justify-center font-bold text-slate-700 dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">-</button>
+                <span id="qty-pants" class="w-8 text-center font-semibold text-sm dark:text-white">0</span>
+                <button onclick="changeQty('pants', 1)" class="w-8 h-8 rounded-full bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 flex items-center justify-center font-bold text-slate-700 dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">+</button>
+              </div>
+            </div>
+
+            <!-- Towels -->
+            <div class="flex justify-between items-center py-4">
+              <div>
+                <p class="font-semibold text-sm text-slate-800 dark:text-white">Bath Towels</p>
+                <p class="text-xs text-grayCustom">Approx. 1.5 lbs each</p>
+              </div>
+              <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                <button onclick="changeQty('towels', -1)" class="w-8 h-8 rounded-full bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 flex items-center justify-center font-bold text-slate-700 dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">-</button>
+                <span id="qty-towels" class="w-8 text-center font-semibold text-sm dark:text-white">0</span>
+                <button onclick="changeQty('towels', 1)" class="w-8 h-8 rounded-full bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 flex items-center justify-center font-bold text-slate-700 dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">+</button>
+              </div>
+            </div>
+
+            <!-- Sheets -->
+            <div class="flex justify-between items-center py-4">
+              <div>
+                <p class="font-semibold text-sm text-slate-800 dark:text-white">Bed Sheets (Double)</p>
+                <p class="text-xs text-grayCustom">Approx. 2.0 lbs each</p>
+              </div>
+              <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                <button onclick="changeQty('sheets', -1)" class="w-8 h-8 rounded-full bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 flex items-center justify-center font-bold text-slate-700 dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">-</button>
+                <span id="qty-sheets" class="w-8 text-center font-semibold text-sm dark:text-white">0</span>
+                <button onclick="changeQty('sheets', 1)" class="w-8 h-8 rounded-full bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 flex items-center justify-center font-bold text-slate-700 dark:text-white hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estimate Details (Right) -->
+        <div class="lg:col-span-5 bg-gradient-to-br from-primary to-secondary p-8 rounded-3xl text-white shadow-xl space-y-6">
+          <h3 class="font-display font-semibold text-xl">Your Estimate</h3>
+          
+          <div class="space-y-4">
+            <div class="flex justify-between items-center border-b border-white/20 pb-3 text-sm">
+              <span>Total Qty</span>
+              <span id="calc-total-qty" class="font-bold text-base">0 items</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-white/20 pb-3 text-sm">
+              <span>Estimated Weight</span>
+              <span id="calc-total-weight" class="font-bold text-base">0.0 lbs</span>
+            </div>
+            <div class="flex justify-between items-start pt-2">
+              <div>
+                <p class="text-[10px] uppercase tracking-wider opacity-75">Recommended Plan</p>
+                <p id="calc-recommended-plan" class="font-bold text-base mt-1">Select items first</p>
+              </div>
+              <div class="text-right">
+                <p class="text-[10px] uppercase tracking-wider opacity-75">Estimated Cost</p>
+                <p id="calc-estimated-cost" class="font-bold text-xl mt-1">$0.00</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="open-booking-modal-btn w-full py-3.5 bg-slate-900 text-white font-semibold rounded-xl hover:bg-slate-800 transition-colors shadow-lg">
+            Book Estimated Pickup
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DRY CLEANING INDIVIDUAL PRICE GUIDE SECTION
+       ========================================== -->
+  <section class="py-20 lg:py-28 bg-gray-50 dark:bg-slate-800/40 border-t border-gray-150 dark:border-slate-750">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll reveal-fade-up">
+        <span class="text-xs font-semibold uppercase tracking-wider text-primary">A La Carte Guide</span>
+        <h2 class="font-display font-semibold text-3xl sm:text-4xl text-slate-800 dark:text-white mt-2">Dry Cleaning Price List</h2>
+        <p class="text-lg text-slate-500 dark:text-slate-400 mt-2">Need individual garments dry cleaned? We handle luxury fabrics on a flat-rate scale.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+        <!-- Item 1 -->
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 text-center hover-lift flex flex-col justify-between h-full">
+          <div>
+            <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary mx-auto mb-4">
+              <img src="assets/dry1" alt="Suit/Tuxedo" class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-semibold text-sm dark:text-white">Suit / Tuxedo</h4>
+          </div>
+          <div>
+            <p class="text-primary font-bold text-lg mt-2">$15.00</p>
+            <p class="text-[10px] text-grayCustom mt-1">2-Piece dry wash</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 text-center hover-lift flex flex-col justify-between h-full">
+          <div>
+            <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary mx-auto mb-4">
+              <img src="assets/dry2" alt="Winter Coat" class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-semibold text-sm dark:text-white">Winter Coat</h4>
+          </div>
+          <div>
+            <p class="text-primary font-bold text-lg mt-2">$14.00</p>
+            <p class="text-[10px] text-grayCustom mt-1">Heavy fabric spotting</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 text-center hover-lift flex flex-col justify-between h-full">
+          <div>
+            <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary mx-auto mb-4">
+              <img src="assets/dry3" alt="Evening Dress" class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-semibold text-sm dark:text-white">Evening Dress</h4>
+          </div>
+          <div>
+            <p class="text-primary font-bold text-lg mt-2">$12.00</p>
+            <p class="text-[10px] text-grayCustom mt-1">Delicate silk/lace</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 text-center hover-lift flex flex-col justify-between h-full">
+          <div>
+            <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary mx-auto mb-4">
+              <img src="assets/dry4" alt="Silk Shirt" class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-semibold text-sm dark:text-white">Silk Shirt</h4>
+          </div>
+          <div>
+            <p class="text-primary font-bold text-lg mt-2">$6.50</p>
+            <p class="text-[10px] text-grayCustom mt-1">Vacuum steam fold</p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 text-center hover-lift col-span-2 sm:col-span-1 lg:col-span-1 flex flex-col justify-between h-full">
+          <div>
+            <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary mx-auto mb-4">
+              <img src="assets/dry5" alt="Wool Scarf" class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-semibold text-sm dark:text-white">Wool Scarf</h4>
+          </div>
+          <div>
+            <p class="text-primary font-bold text-lg mt-2">$4.50</p>
+            <p class="text-[10px] text-grayCustom mt-1">Anti-pilling wash</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LAUNDRY CARE BLOG / TIPS SECTION
+       ========================================== -->
+  <section class="py-14 sm:py-20 lg:py-28 bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 reveal-on-scroll reveal-fade-up">
+        <span class="text-xs font-semibold uppercase tracking-wider text-primary">Care &amp; Tips</span>
+        <h2 class="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-slate-800 dark:text-white mt-2">Fabric Care Guides</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-slate-400 mt-2">Expert tips from our fabric chemists on how to make your garments last longer.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8 max-w-5xl mx-auto">
+        <!-- Post 1 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-750 shadow-sm group hover-lift flex flex-col">
+          <div class="image-zoom-container h-40 sm:h-48">
+            <img src="assets/blog1" alt="Wine stain removal tips" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 sm:p-6 space-y-2.5 sm:space-y-3 flex flex-col flex-1">
+            <span class="text-[10px] font-bold text-primary bg-blue-100 dark:bg-blue-900/30 px-2.5 py-1 rounded-full uppercase self-start">Stain Removal</span>
+            <h4 class="font-display font-semibold text-sm sm:text-base text-slate-800 dark:text-white group-hover:text-primary transition-colors">How to Remove Red Wine Stains</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed min-h-[40px]">Emergency steps to neutralise tannins before booking our dry cleaning spotting checks.</p>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-750 shadow-sm group hover-lift flex flex-col">
+          <div class="image-zoom-container h-40 sm:h-48">
+            <img src="assets/blog2" alt="White shirt tips" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 sm:p-6 space-y-2.5 sm:space-y-3 flex flex-col flex-1">
+            <span class="text-[10px] font-bold text-primary bg-blue-100 dark:bg-blue-900/30 px-2.5 py-1 rounded-full uppercase self-start">Fabric Integrity</span>
+            <h4 class="font-display font-semibold text-sm sm:text-base text-slate-800 dark:text-white group-hover:text-primary transition-colors">Preventing White Shirt Yellowing</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed min-h-[40px]">Why hard water causes oxidation on shirt underarms, and how soft wash parameters prevent it.</p>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-750 shadow-sm group hover-lift flex flex-col sm:col-span-2 md:col-span-1">
+          <div class="image-zoom-container h-40 sm:h-48">
+            <img src="assets/blog3" alt="Wool care" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 sm:p-6 space-y-2.5 sm:space-y-3 flex flex-col flex-1">
+            <span class="text-[10px] font-bold text-primary bg-blue-100 dark:bg-blue-900/30 px-2.5 py-1 rounded-full uppercase self-start">Winter Care</span>
+            <h4 class="font-display font-semibold text-sm sm:text-base text-slate-800 dark:text-white group-hover:text-primary transition-colors">Caring for Cashmere &amp; Wools</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed min-h-[40px]">Simple steps to store knitted items safely, protect them from moths, and avoid pilling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weight Calculator Qty Logic -->
+  <script>
+    // Qty tracker
+    const laundryQtys = {
+      shirts: 0,
+      pants: 0,
+      towels: 0,
+      sheets: 0
+    };
+
+    const laundryWeights = {
+      shirts: 0.5,
+      pants: 1.0,
+      towels: 1.5,
+      sheets: 2.0
+    };
+
+    function changeQty(item, amount) {
+      const currentQty = laundryQtys[item];
+      const newQty = Math.max(0, currentQty + amount);
+      laundryQtys[item] = newQty;
+      
+      const qtyElement = document.getElementById(`qty-${item}`);
+      if (qtyElement) {
+        qtyElement.textContent = newQty;
+      }
+
+      updateCalculator();
+    }
+
+    function updateCalculator() {
+      let totalQty = 0;
+      let totalWeight = 0;
+
+      for (const item in laundryQtys) {
+        totalQty += laundryQtys[item];
+        totalWeight += laundryQtys[item] * laundryWeights[item];
+      }
+
+      const totalQtyElement = document.getElementById('calc-total-qty');
+      const totalWeightElement = document.getElementById('calc-total-weight');
+      const recommendedPlanElement = document.getElementById('calc-recommended-plan');
+      const estimatedCostElement = document.getElementById('calc-estimated-cost');
+
+      if (totalQtyElement) totalQtyElement.textContent = `${totalQty} items`;
+      if (totalWeightElement) totalWeightElement.textContent = `${totalWeight.toFixed(1)} lbs`;
+
+      let recommendedPlan = 'Select items first';
+      let estimatedCost = 0.00;
+
+      if (totalWeight > 0) {
+        if (totalWeight <= 10) {
+          recommendedPlan = 'Basic Bag Plan';
+          estimatedCost = 29.00;
+        } else if (totalWeight <= 20) {
+          recommendedPlan = 'Standard Bag Plan';
+          estimatedCost = 49.00;
+        } else if (totalWeight <= 35) {
+          recommendedPlan = 'Premium Bag Plan';
+          estimatedCost = 79.00;
+        } else {
+          recommendedPlan = 'Bulk Business Plan';
+          // $79 for first 35 lbs + $1.50 per excess lb
+          estimatedCost = 79.00 + (totalWeight - 35) * 1.50;
+        }
+      }
+
+      if (recommendedPlanElement) recommendedPlanElement.textContent = recommendedPlan;
+      if (estimatedCostElement) estimatedCostElement.textContent = `$${estimatedCost.toFixed(2)}`;
+    }
+  </script>
+
+  <!-- ==========================================
+       FAQ SECTION (10 Premium Questions Accordion)
+       ========================================== -->
+  <section class="py-14 sm:py-20 lg:py-28 bg-white dark:bg-slate-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 reveal-on-scroll reveal-fade-up">
+        <h2 class="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-slate-800 dark:text-white mb-3 sm:mb-4">Frequently Asked Questions</h2>
+        <p class="text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed">Everything you need to know about our premium cleaning cycles.</p>
+      </div>
+
+      <!-- FAQ Accordion List -->
+      <div class="space-y-4">
+        
+        <!-- Q1 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>How does the laundry pickup work?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              It's simple! You schedule a date and time slot using our website or portal. A FreshFold driver arrives at your doorstep with custom laundry bags, collects your garments, and takes them to our processing facility.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>How long does dry cleaning take?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              Standard dry cleaning orders are processed and returned to you within 48 hours. If you choose our express service, it can be returned inside 24 hours.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>Do you offer same-day delivery?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              Yes, our Express Same-Day cycle guarantees delivery within 12 hours for wash & fold items booked before 10:00 AM.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>What payment methods are accepted?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              We accept all major credit cards, debit cards, digital wallets (Apple Pay, Google Pay), and cash/card on delivery.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>Can I schedule recurring weekly pickups?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              Absolutely. You can set weekly or bi-weekly laundry intervals in your Portal settings under Saved Schedules.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>What happens if an item is damaged?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              We process each item with extreme care. In the rare event of damage, your garments are fully insured up to 10x the service fee cost.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>Do you wash my clothes with other people's clothes?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              Never. Each customer order is sorted, tagged, and washed independently in separate commercial washing drums for maximum sanitation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>Can I customize my detergent options?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              Yes, you can specify scent preferences (lavender, fresh rain, unscented) and pick hypoallergenic detergents during booking.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>Is there a minimum order weight value?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              There is no weight minimum, but orders below $20 incur a small $4 delivery fee. All orders above $20 enjoy free shipping.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 reveal-on-scroll reveal-fade-up">
+          <button class="accordion-header w-full px-6 py-5 flex items-center justify-between text-left font-display font-semibold text-slate-800 dark:text-white hover:text-primary transition-colors focus:outline-none">
+            <span>How do I modify my pickup instructions after booking?</span>
+            <svg class="accordion-icon h-5 w-5 text-grayCustom transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-out bg-white dark:bg-slate-800/50">
+            <p class="px-6 pb-6 pt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              Simply log into your User Portal dashboard and edit the "Active Pickups" notes up to 2 hours before the driver arrives.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE CTA SECTION
+       ========================================== -->
+  <section class="py-14 sm:py-20 bg-[#F8FAFC] dark:bg-[#0F172A] border-t border-gray-100 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-primary to-secondary rounded-3xl overflow-hidden relative">
+        <!-- Decorative blobs -->
+        <div class="absolute -top-16 -right-16 w-48 sm:w-64 h-48 sm:h-64 bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-16 -left-16 w-48 sm:w-64 h-48 sm:h-64 bg-sky-300/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 sm:py-14 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <!-- Left: Copy -->
+          <div class="text-white space-y-4 sm:space-y-5">
+            <span class="inline-block text-[10px] sm:text-xs font-bold uppercase tracking-widest bg-white/15 px-3 py-1 rounded-full">Limited Time Offer</span>
+            <h2 class="font-display font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight">Get 20% Off Your First Dry Cleaning Order</h2>
+            <p class="text-white/80 text-sm sm:text-base leading-relaxed">Use code <span class="font-bold bg-white/20 px-2 py-0.5 rounded-lg">FIRSTFOLD20</span> at checkout. Valid for all new customers booking any premium dry cleaning service.</p>
+            <!-- Trust indicators -->
+            <div class="flex flex-wrap gap-3 sm:gap-4 pt-2">
+              <div class="flex items-center gap-1.5 text-white/90 text-xs font-semibold">
+                <svg class="w-4 h-4 text-green-300 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                No Minimums Required
+              </div>
+              <div class="flex items-center gap-1.5 text-white/90 text-xs font-semibold">
+                <svg class="w-4 h-4 text-green-300 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Cancel Anytime
+              </div>
+              <div class="flex items-center gap-1.5 text-white/90 text-xs font-semibold">
+                <svg class="w-4 h-4 text-green-300 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                24h Turnaround Guaranteed
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Coupon Widget -->
+          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 sm:p-7 space-y-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-display font-bold text-white text-base sm:text-lg">Claim Your Discount</h3>
+              <span class="text-[10px] font-bold bg-amber-400 text-slate-900 px-2.5 py-0.5 rounded-full animate-pulse">LIVE</span>
+            </div>
+
+            <!-- Countdown timer -->
+            <div class="grid grid-cols-4 gap-2 text-center">
+              <div class="bg-white/15 rounded-xl py-2.5 px-1">
+                <p id="cta-hours" class="text-xl sm:text-2xl font-bold text-white font-display">11</p>
+                <p class="text-[10px] text-white/70 font-semibold uppercase tracking-wider">Hrs</p>
+              </div>
+              <div class="bg-white/15 rounded-xl py-2.5 px-1">
+                <p id="cta-mins" class="text-xl sm:text-2xl font-bold text-white font-display">59</p>
+                <p class="text-[10px] text-white/70 font-semibold uppercase tracking-wider">Min</p>
+              </div>
+              <div class="bg-white/15 rounded-xl py-2.5 px-1">
+                <p id="cta-secs" class="text-xl sm:text-2xl font-bold text-white font-display">59</p>
+                <p class="text-[10px] text-white/70 font-semibold uppercase tracking-wider">Sec</p>
+              </div>
+              <div class="bg-white/15 rounded-xl py-2.5 px-1">
+                <p class="text-xl sm:text-2xl font-bold text-white font-display">20%</p>
+                <p class="text-[10px] text-white/70 font-semibold uppercase tracking-wider">Off</p>
+              </div>
+            </div>
+
+            <!-- Coupon code copy button -->
+            <div class="flex gap-2">
+              <div class="flex-1 bg-white/10 border border-white/30 border-dashed rounded-xl px-4 py-2.5 flex items-center">
+                <span id="cta-coupon-code" class="text-white font-bold text-sm tracking-wider">FIRSTFOLD20</span>
+              </div>
+              <button onclick="copyCouponCode()" id="cta-copy-btn" class="px-4 py-2.5 bg-white text-primary font-bold text-xs rounded-xl hover:bg-slate-50 transition-all whitespace-nowrap flex-shrink-0">
+                Copy Code
+              </button>
+            </div>
+
+            <!-- CTA buttons -->
+            <div class="flex flex-col xs:flex-row gap-2.5 pt-1">
+              <button class="open-booking-modal-btn flex-1 py-3 bg-white text-primary font-bold text-sm rounded-xl hover:bg-slate-50 transition-all shadow-lg">
+                Book Pickup Now
+              </button>
+              <a href="pricing.html" class="flex-1 py-3 border border-white/30 text-white font-bold text-sm rounded-xl hover:bg-white/10 transition-all text-center">
+                View Plans
+              </a>
+            </div>
+
+            <!-- Slots remaining indicator -->
+            <div class="flex items-center gap-2">
+              <div class="flex -space-x-1.5">
+                <div class="w-5 h-5 rounded-full bg-green-400 border-2 border-white/20"></div>
+                <div class="w-5 h-5 rounded-full bg-sky-400 border-2 border-white/20"></div>
+                <div class="w-5 h-5 rounded-full bg-amber-400 border-2 border-white/20"></div>
+              </div>
+              <p class="text-xs text-white/75"><span class="font-bold text-white" id="cta-slots">47</span> people claimed this offer today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="bg-slate-900 text-slate-400 pt-12 sm:pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 mb-10 sm:mb-12">
+      <!-- Description -->
+      <div class="col-span-2 sm:col-span-2 md:col-span-3 lg:col-span-2 space-y-4">
+        <a href="index.html">
+           <div class="flex items-center text-white">
+          <svg class="h-8 w-8 text-primary mr-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="10" width="70" height="80" rx="12" stroke="currentColor" stroke-width="8" fill="none"/>
+            <line x1="25" y1="26" x2="75" y2="26" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="50" cy="60" r="24" stroke="currentColor" stroke-width="6" fill="none"/>
+          </svg>
+          <span class="font-display font-bold text-xl">FreshFold</span>
+        </div>
+        </a>
+       
+        <p class="text-sm text-slate-400 pr-6 leading-relaxed">
+          Premium dry cleaning and laundry pickup services tailored for busy lives, commercial uniforms, and luxury garments.
+        </p>
+        <!-- Social Icons -->
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Facebook">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Instagram">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Twitter">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h4 class="font-display font-semibold text-white text-sm uppercase">Quick Links</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+         <li><a href="404.html" class="hover:text-white transition-colors">404 Page</a></li>
+
+         
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="space-y-4">
+        <h4 class="font-display font-semibold text-white text-sm uppercase">Services</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="services.html" class="hover:text-white transition-colors">Laundry Wash</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Steam Pressing</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Commercial Linen</a></li>
+           <li><a href="pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="coming-soon.html" class="hover:text-white transition-colors">Coming Soon</a></li>
+          <li><button class="open-booking-modal-btn text-left hover:text-white transition-colors focus:outline-none">Book Now</button></li>
+        </ul>
+      </div>
+
+   
+
+      <!-- Newsletter Column -->
+      <div class="space-y-4">
+        <h4 class="font-display font-semibold text-white text-sm uppercase">Newsletter</h4>
+        <p class="text-xs leading-relaxed text-slate-400">Subscribe for special promo codes and fabric care updates.</p>
+        <form onsubmit="event.preventDefault(); alert('Subscribed to FreshFold Newsletter!');" class="space-y-2">
+          <input type="email" required placeholder="Your email address" class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white outline-none focus:border-primary placeholder-slate-500">
+          <button type="submit" class="w-full py-2 bg-gradient-to-r from-primary to-secondary text-white text-xs font-semibold rounded-lg hover:scale-102 transition-transform">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs">
+      <p>&copy; 2026 FreshFold Laundry Inc. All rights reserved. Premium responsive laundry designs.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       BOOKING MODAL (Wizard Flow)
+       ========================================== -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 backdrop-blur-sm px-4">
+    <div class="bg-white dark:bg-slate-800 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-gray-100 dark:border-slate-700 flex flex-col max-h-[90vh]">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-5 border-b border-gray-100 dark:border-slate-700 flex justify-between items-center bg-gray-50 dark:bg-slate-800/80">
+        <div>
+          <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white">Book Laundry Pickup</h3>
+          <p class="text-xs text-grayCustom mt-0.5">Fresh cleaning at your doorstep in 4 steps</p>
+        </div>
+        <button class="close-booking-modal-btn p-1.5 rounded-lg text-gray-400 hover:text-gray-700 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-700 focus:outline-none">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="px-6 py-4 bg-blue-50/50 dark:bg-slate-900/30 border-b border-gray-100 dark:border-slate-700 flex items-center justify-between">
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse">
+          <span class="wizard-step-indicator w-6 h-6 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">1</span>
+          <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">Schedule</span>
+        </div>
+        <div class="h-0.5 bg-gray-200 dark:bg-slate-700 flex-1 mx-2"></div>
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse">
+          <span class="wizard-step-indicator w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center dark:bg-slate-700 dark:text-slate-400">2</span>
+          <span class="text-xs font-medium text-slate-400 dark:text-slate-500">Service</span>
+        </div>
+        <div class="h-0.5 bg-gray-200 dark:bg-slate-700 flex-1 mx-2"></div>
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse">
+          <span class="wizard-step-indicator w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center dark:bg-slate-700 dark:text-slate-400">3</span>
+          <span class="text-xs font-medium text-slate-400 dark:text-slate-500">Details</span>
+        </div>
+        <div class="h-0.5 bg-gray-200 dark:bg-slate-700 flex-1 mx-2"></div>
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse">
+          <span class="wizard-step-indicator w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center dark:bg-slate-700 dark:text-slate-400">4</span>
+          <span class="text-xs font-medium text-slate-400 dark:text-slate-500">Confirm</span>
+        </div>
+      </div>
+
+      <!-- Form Content -->
+      <form id="booking-wizard-form" class="flex-1 overflow-y-auto px-6 py-6" onsubmit="event.preventDefault();">
+        <div id="wizard-form-content">
+          
+          <!-- STEP 1: Date & Time -->
+          <div class="wizard-step space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Select Pickup Schedule</h4>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Preferred Pickup Date</label>
+              <input type="date" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-transparent text-slate-700 dark:text-slate-300 focus:border-primary outline-none text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Time Window Slot</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-transparent text-slate-700 dark:text-slate-300 focus:border-primary outline-none text-sm">
+                <option value="morning">Morning (08:00 AM - 12:00 PM)</option>
+                <option value="afternoon">Afternoon (12:00 PM - 04:00 PM)</option>
+                <option value="evening">Evening (04:00 PM - 08:00 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- STEP 2: Service Selection -->
+          <div class="wizard-step hidden space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Select Laundry Services</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="border border-gray-200 dark:border-slate-700 p-3.5 rounded-xl flex items-center space-x-2.5 cursor-pointer hover:bg-blue-50/50 dark:hover:bg-slate-900/30">
+                <input type="checkbox" checked class="accent-primary h-4.5 w-4.5">
+                <span class="text-sm font-semibold dark:text-white">Wash & Fold</span>
+              </label>
+              <label class="border border-gray-200 dark:border-slate-700 p-3.5 rounded-xl flex items-center space-x-2.5 cursor-pointer hover:bg-blue-50/50 dark:hover:bg-slate-900/30">
+                <input type="checkbox" class="accent-primary h-4.5 w-4.5">
+                <span class="text-sm font-semibold dark:text-white">Dry Cleaning</span>
+              </label>
+              <label class="border border-gray-200 dark:border-slate-700 p-3.5 rounded-xl flex items-center space-x-2.5 cursor-pointer hover:bg-blue-50/50 dark:hover:bg-slate-900/30">
+                <input type="checkbox" class="accent-primary h-4.5 w-4.5">
+                <span class="text-sm font-semibold dark:text-white">Steam Press</span>
+              </label>
+              <label class="border border-gray-200 dark:border-slate-700 p-3.5 rounded-xl flex items-center space-x-2.5 cursor-pointer hover:bg-blue-50/50 dark:hover:bg-slate-900/30">
+                <input type="checkbox" class="accent-primary h-4.5 w-4.5">
+                <span class="text-sm font-semibold dark:text-white">Shoe Laundry</span>
+              </label>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Estimated Weight (lbs)</label>
+              <input type="range" min="5" max="60" value="15" class="w-full accent-primary">
+              <div class="flex justify-between text-xs text-grayCustom mt-1">
+                <span>Min: 5 lbs</span>
+                <span class="font-bold text-primary">Est: 15 lbs</span>
+                <span>Max: 60+ lbs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: Address & Info -->
+          <div class="wizard-step hidden space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Pickup Address details</h4>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Full Pickup Address</label>
+              <textarea rows="3" required placeholder="Apartment / Suite / Street address" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-transparent text-slate-700 dark:text-slate-300 focus:border-primary outline-none text-sm resize-none"></textarea>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Special Laundry Instructions</label>
+              <input type="text" placeholder="e.g. use scent-free soap, air dry woolens" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-transparent text-slate-700 dark:text-slate-300 focus:border-primary outline-none text-sm">
+            </div>
+          </div>
+
+          <!-- STEP 4: Summary -->
+          <div class="wizard-step hidden space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Order Confirmation</h4>
+            <div class="bg-gray-50 dark:bg-slate-900 p-4 rounded-2xl border border-gray-100 dark:border-slate-800 space-y-3">
+              <div class="flex justify-between text-sm">
+                <span class="text-slate-500">Selected Cycles</span>
+                <span class="font-semibold text-slate-800 dark:text-white">Wash & Fold</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-slate-500">Estimated Weight</span>
+                <span class="font-semibold text-slate-800 dark:text-white">15 lbs</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-slate-500">Pickup Date</span>
+                <span class="font-semibold text-slate-800 dark:text-white">Scheduled Window</span>
+              </div>
+              <div class="border-t border-gray-200 dark:border-slate-700 my-2 pt-2 flex justify-between text-base">
+                <span class="font-semibold text-slate-800 dark:text-white">Estimated Cost</span>
+                <span class="font-bold text-primary">$35.00</span>
+              </div>
+            </div>
+            <p class="text-xs text-grayCustom leading-relaxed">
+              Price shown is a preliminary estimate. Our driver will weigh your bag on pickup to confirm final weight receipt.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Success Animation Page inside Modal -->
+        <div id="wizard-success-content" class="hidden text-center py-10 space-y-4">
+          <!-- Animated success circle -->
+          <div class="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 flex items-center justify-center mx-auto text-3xl animate-bounce">✓</div>
+          <h3 class="font-display font-semibold text-xl text-slate-800 dark:text-white">Pickup Confirmed!</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 max-w-xs mx-auto leading-relaxed">
+            Your booking reference is #FF-78329. A FreshFold driver has been dispatched and will arrive during your preferred time window.
+          </p>
+        </div>
+
+      </form>
+
+      <!-- Modal Footer actions -->
+      <div id="wizard-actions" class="px-6 py-4 border-t border-gray-100 dark:border-slate-700 bg-gray-50 dark:bg-slate-800/80 flex justify-between items-center">
+        <button id="wizard-prev-btn" class="px-5 py-2.5 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 font-semibold text-sm rounded-xl text-slate-700 dark:text-slate-200 hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors invisible">
+          Back
+        </button>
+        <button id="wizard-next-btn" class="px-6 py-2.5 bg-primary text-white font-semibold text-sm rounded-xl hover:bg-blue-700 transition-colors shadow">
+          Next
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       WHATSAPP WIDGET & FLOATING ACTIONS
+       ========================================== -->
+  <!-- WhatsApp Button -->
+  <button id="whatsapp-widget-btn" class="fixed bottom-6 right-6 z-40 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:scale-105 hover:bg-emerald-600 transition-all duration-300 focus:outline-none" aria-label="Chat on WhatsApp">
+    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.019-5.117-2.877-6.979C16.582 1.9 14.1 1.079 11.999 1.079c-5.441 0-9.87 4.422-9.875 9.866-.001 1.8.49 3.548 1.418 5.12L2.53 21.444l4.117-1.29z"/>
+    </svg>
+  </button>
+
+  <!-- WhatsApp Mini Chat Box -->
+  <div id="whatsapp-widget-box" class="fixed bottom-24 right-6 z-40 w-80 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-gray-100 dark:border-slate-700 hidden flex-col overflow-hidden animate-float">
+    <!-- Box Header -->
+    <div class="bg-emerald-500 text-white p-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2 rtl:space-x-reverse">
+        <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">💬</div>
+        <div>
+          <h4 class="text-xs font-bold">FreshFold Support</h4>
+          <p class="text-[9px] text-emerald-100">Usually replies instantly</p>
+        </div>
+      </div>
+      <button id="whatsapp-widget-close" class="text-white hover:text-emerald-100">
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <!-- Box Body -->
+    <div class="p-4 bg-gray-50 dark:bg-slate-900 text-xs space-y-3.5 flex-1 max-h-48 overflow-y-auto">
+      <div class="bg-white dark:bg-slate-800 p-2.5 rounded-xl border border-gray-100 dark:border-slate-700 max-w-[85%] text-slate-700 dark:text-slate-300">
+        Hey there! 👋 How can we help you with your dry cleaning or laundry pickup today?
+      </div>
+    </div>
+    <!-- Box Footer -->
+    <div class="p-3 bg-white dark:bg-slate-800 border-t border-gray-100 dark:border-slate-700 flex items-center space-x-2 rtl:space-x-reverse">
+      <input id="whatsapp-widget-input" type="text" placeholder="Type message..." class="w-full bg-gray-50 dark:bg-slate-900 border border-gray-150 dark:border-slate-700 rounded-full px-3 py-2 text-xs outline-none text-slate-700 dark:text-slate-300">
+      <button id="whatsapp-widget-send" class="bg-emerald-500 text-white p-2 rounded-full hover:bg-emerald-600">
+        <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 left-6 z-40 bg-slate-900/80 dark:bg-slate-700/80 text-white p-3.5 rounded-full shadow-lg border border-slate-700 hover:bg-primary transition-all duration-300 opacity-0 pointer-events-none translate-y-4" aria-label="Scroll back to top">
+    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <!-- ==========================================
+       INTERACTIVE CTA COUNTDOWN + COPY LOGIC
+       ========================================== -->
+  <script>
+    // Countdown Timer for CTA section
+    (function () {
+      const end = new Date();
+      end.setHours(23, 59, 59, 0);
+      function tick() {
+        const now = new Date();
+        let diff = Math.max(0, Math.floor((end - now) / 1000));
+        const h = Math.floor(diff / 3600);
+        const m = Math.floor((diff % 3600) / 60);
+        const s = diff % 60;
+        const pad = n => String(n).padStart(2, '0');
+        const hEl = document.getElementById('cta-hours');
+        const mEl = document.getElementById('cta-mins');
+        const sEl = document.getElementById('cta-secs');
+        if (hEl) hEl.textContent = pad(h);
+        if (mEl) mEl.textContent = pad(m);
+        if (sEl) sEl.textContent = pad(s);
+      }
+      tick();
+      setInterval(tick, 1000);
+
+      // Slowly increment slots claimed
+      let slots = 47;
+      setInterval(() => {
+        if (Math.random() < 0.3) {
+          slots = Math.min(slots + 1, 99);
+          const el = document.getElementById('cta-slots');
+          if (el) el.textContent = slots;
+        }
+      }, 8000);
+    })();
+
+    // Copy coupon code
+    function copyCouponCode() {
+      const code = document.getElementById('cta-coupon-code');
+      const btn = document.getElementById('cta-copy-btn');
+      if (!code || !btn) return;
+      navigator.clipboard.writeText(code.textContent.trim()).then(() => {
+        btn.textContent = '✓ Copied!';
+        btn.classList.add('bg-green-100', 'text-green-700');
+        setTimeout(() => {
+          btn.textContent = 'Copy Code';
+          btn.classList.remove('bg-green-100', 'text-green-700');
+        }, 2500);
+      }).catch(() => {
+        btn.textContent = '✓ Copied!';
+        setTimeout(() => { btn.textContent = 'Copy Code'; }, 2000);
+      });
+    }
+  </script>
+
+  <!-- ==========================================
+       SHARED JAVASCRIPT
+       ========================================== -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

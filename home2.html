@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='15' y='10' width='70' height='80' rx='12' stroke='%232563EB' stroke-width='8'/%3E%3Cline x1='25' y1='26' x2='75' y2='26' stroke='%232563EB' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='35' cy='20' r='4' fill='%232563EB'/%3E%3Ccircle cx='47' cy='20' r='2' fill='%232563EB'/%3E%3Ccircle cx='55' cy='20' r='2' fill='%232563EB'/%3E%3Ccircle cx='50' cy='60' r='24' stroke='%232563EB' stroke-width='6'/%3E%3Cpath d='M50 48C50 48 58 56.5 58 61.5C58 65.9183 54.4183 69.5 50 69.5C45.5817 69.5 42 65.9183 42 61.5C42 56.5 50 48 50 48Z' fill='%232563EB'/%3E%3C/svg%3E">
+  <title>FreshFold Laundry - Commercial Care & Pickup</title>
+  <meta name="description" content="Commercial laundry, bulk uniforms, and premium dry cleaning. Get business pickup schedules and premium fabric stain treatments.">
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB',
+            secondary: '#38BDF8',
+            accent: '#0EA5E9',
+            success: '#22C55E',
+            text: '#1E293B',
+            darkBg: '#0F172A',
+            lightBg: '#F8FAFC',
+            grayCustom: '#64748B'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#F8FAFC] dark:bg-[#0F172A] text-[#1E293B] dark:text-slate-200 transition-colors duration-300">
+
+  <!-- ==========================================
+       HEADER / NAVBAR
+       ========================================== -->
+   <header id="main-header" class="fixed top-0 left-0 right-0 z-50 py-5 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center group">
+          <svg class="h-9 w-9 mr-2 transition-transform duration-300 group-hover:rotate-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="nav-logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2563EB" />
+                <stop offset="100%" stop-color="#38BDF8" />
+              </linearGradient>
+            </defs>
+            <rect x="15" y="10" width="70" height="80" rx="12" stroke="url(#nav-logo-grad)" stroke-width="8" fill="none"/>
+            <line x1="25" y1="26" x2="75" y2="26" stroke="url(#nav-logo-grad)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="35" cy="20" r="4" fill="url(#nav-logo-grad)"/>
+            <circle cx="47" cy="20" r="2" fill="url(#nav-logo-grad)"/>
+            <circle cx="55" cy="20" r="2" fill="url(#nav-logo-grad)"/>
+            <circle cx="50" cy="60" r="24" stroke="url(#nav-logo-grad)" stroke-width="6" fill="none"/>
+            <path d="M50 48C50 48 58 56.5 58 61.5C58 65.9183 54.4183 69.5 50 69.5C45.5817 69.5 42 65.9183 42 61.5C42 56.5 50 48 50 48Z" fill="url(#nav-logo-grad)"/>
+          </svg>
+          <span class="font-display font-semibold text-xl tracking-tight text-slate-800 dark:text-white group-hover:text-primary transition-colors">FreshFold</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden xl:flex items-center xl:space-x-2">
+          <a href="index.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+          <a href="home2.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-primary hover:text-primary transition-colors">Home 2</a>
+          <a href="about.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About Us</a>
+          <a href="services.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Services</a>
+          <a href="gallery.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Gallery</a>
+          <a href="pricing.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Pricing</a>
+          <a href="contact.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
+          <a href="portal.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">User Portal</a>
+        </nav>
+
+        <!-- Right Side Toggles & Actions -->
+        <div class="hidden xl:flex items-center xl:space-x-4">
+          <!-- LTR/RTL Toggle -->
+          <button class="dir-toggle-btn p-1.5 xl:p-2 rounded-lg text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-200" aria-label="Toggle language direction">
+            <span class="dir-label text-[10px] xl:text-xs font-bold tracking-wider uppercase">RTL</span>
+          </button>
+
+          <!-- Light/Dark Toggle -->
+          <button class="theme-toggle-btn p-1.5 xl:p-2 rounded-lg text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-200" aria-label="Toggle theme">
+            <!-- Moon Icon (Light Mode Active) -->
+            <svg class="theme-moon-icon h-4.5 w-4.5 xl:h-5 xl:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <!-- Sun Icon (Dark Mode Active) -->
+            <svg class="theme-sun-icon h-4.5 w-4.5 xl:h-5 xl:w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707m12.728-12.728l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+            </svg>
+          </button>
+
+          <!-- Action Buttons -->
+          <a href="login.html" class="text-xs xl:text-sm font-semibold text-gray-700 dark:text-slate-200 hover:text-primary transition-colors">Login</a>
+          <a href="booking.html" class="ripple-btn px-4 xl:px-5 py-2 xl:py-2.5 bg-gradient-to-r from-primary to-secondary text-white text-xs xl:text-sm font-semibold rounded-full shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 hover:-translate-y-0.5 transition-all duration-300">
+            Book Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Controls -->
+        <div class="flex items-center space-x-2 xl:hidden">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none" aria-expanded="false" aria-label="Toggle mobile menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu (Animated hamburger target) -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden xl:hidden flex-col bg-white dark:bg-slate-900 px-6 py-6 transition-all duration-300 overflow-y-auto max-h-screen pb-12">
+    <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center">
+        <svg class="h-8 w-8 text-primary mr-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15" y="10" width="70" height="80" rx="12" stroke="currentColor" stroke-width="8" fill="none"/>
+          <line x1="25" y1="26" x2="75" y2="26" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="50" cy="60" r="24" stroke="currentColor" stroke-width="6" fill="none"/>
+        </svg>
+        <span class="font-display font-semibold text-lg dark:text-white">FreshFold</span>
+      </div>
+      <button id="mobile-menu-close" class="p-2 rounded-lg text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <nav class="flex flex-col space-y-4 text-center">
+      <a href="index.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Home</a>
+      <a href="home2.html" class="text-xl font-medium text-primary py-2 border-b border-gray-100 dark:border-slate-800">Home 2</a>
+      <a href="about.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">About Us</a>
+      <a href="services.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Services</a>
+      <a href="gallery.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Gallery</a>
+      <a href="pricing.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Pricing</a>
+      <a href="contact.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Contact</a>
+      <a href="portal.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2">User Portal</a>
+      
+      <div class="pt-6 flex flex-col space-y-4">
+        <a href="login.html" class="w-full text-center py-3 border border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-200 font-semibold rounded-full">Login</a>
+        <a href="booking.html" class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg text-center">Book Now</a>
+      </div>
+
+      <!-- Mobile Toggles Inside Menu Bar -->
+      <div class="mt-6 pt-6 border-t border-gray-100 dark:border-slate-800 flex items-center justify-center space-x-4">
+        <button class="dir-toggle-btn p-3.5 rounded-2xl bg-gray-50 dark:bg-slate-800 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white flex items-center justify-center gap-2 w-1/2" aria-label="Toggle language direction">
+          <span class="dir-label text-xs font-bold uppercase">RTL</span>
+        </button>
+        <button class="theme-toggle-btn p-3.5 rounded-2xl bg-gray-50 dark:bg-slate-800 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white flex items-center justify-center w-1/2" aria-label="Toggle theme">
+          <svg class="theme-moon-icon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+          <svg class="theme-sun-icon h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707m12.728-12.728l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ==========================================
+       SPLIT HERO SECTION WITH BG IMAGE
+       ========================================== -->
+  <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-white dark:bg-slate-900 text-slate-900 dark:text-white transition-colors duration-300">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Image Left -->
+      <div class="lg:col-span-6 relative flex justify-center items-center reveal-on-scroll reveal-fade-left active">
+        <div class="relative w-full max-w-[500px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 dark:border-slate-800">
+          <img src="assets/hero2" alt="Premium Ironing and folding laundry" class="w-full h-full object-cover">
+          
+          <!-- Floating element -->
+          <div class="absolute bottom-6 left-6 right-6 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-4 rounded-2xl border border-slate-200 dark:border-white/10 shadow-lg flex items-center space-x-3.5 rtl:space-x-reverse">
+            <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">⚡</span>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-primary">Express Cycle</h4>
+              <p class="text-sm font-semibold text-slate-900 dark:text-white">Cleaned and delivered in 12 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Right -->
+      <div class="lg:col-span-6 space-y-6 text-center lg:text-left rtl:lg:text-right reveal-on-scroll reveal-fade-right active">
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-300 text-sm font-semibold uppercase tracking-wider border border-blue-500/20">
+          👔 Commercial & Elite Care
+        </div>
+        <h1 class="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl text-slate-900 dark:text-white leading-tight">
+          Commercial and Elite <span class="text-primary">Laundry Care</span> Done Right
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+          Tailored logistics routing, bulk wash capacity, and high-fidelity stain treatment parameters for businesses, boutiques, and households.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <button class="open-booking-modal-btn ripple-btn w-full sm:w-auto px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg shadow-blue-500/25">
+            Schedule Pickup
+          </button>
+          <a href="pricing.html" class="w-full sm:w-auto text-center px-8 py-4 bg-slate-100 dark:bg-white/10 text-slate-900 dark:text-white hover:bg-slate-200 dark:hover:bg-white/20 font-semibold rounded-full border border-slate-200 dark:border-white/20 transition-all">
+            B2B Pricing
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ==========================================
+       LAUNDRY PROCESS TIMELINE
+       ========================================== -->
+  <section class="py-20 lg:py-28 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll reveal-fade-up">
+        <h2 class="font-display font-semibold text-3xl sm:text-4xl text-slate-800 dark:text-white mb-4">Our Seamless Process</h2>
+        <p class="text-lg text-slate-500 dark:text-slate-400">Step-by-step transparency on how we restore fabrics back to original glory.</p>
+      </div>
+
+      <div class="relative border-l-2 border-primary/20 dark:border-slate-800 ml-4 md:ml-0 md:border-l-0 md:grid md:grid-cols-4 md:gap-8">
+        
+        <!-- Step 1 -->
+        <div class="relative pl-8 pb-12 md:pl-0 md:pb-0 md:text-center reveal-on-scroll reveal-fade-up">
+          <div class="absolute top-0 left-0 md:relative md:mx-auto w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-4 shadow-lg shadow-blue-500/20 -translate-x-1/2 md:translate-x-0">
+            1
+          </div>
+          <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white mb-2">Sorting & Tagging</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed pr-4 md:pr-0">
+            Clothes are cataloged and segregated by color fastness and material temperature sensitivity.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative pl-8 pb-12 md:pl-0 md:pb-0 md:text-center reveal-on-scroll reveal-fade-up" style="transition-delay: 100ms;">
+          <div class="absolute top-0 left-0 md:relative md:mx-auto w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-4 shadow-lg shadow-blue-500/20 -translate-x-1/2 md:translate-x-0">
+            2
+          </div>
+          <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white mb-2">Stain Spotting</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed pr-4 md:pr-0">
+            Specialized pre-treatments target ink, coffee, or wine grease stains without fabric erosion.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative pl-8 pb-12 md:pl-0 md:pb-0 md:text-center reveal-on-scroll reveal-fade-up" style="transition-delay: 200ms;">
+          <div class="absolute top-0 left-0 md:relative md:mx-auto w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-4 shadow-lg shadow-blue-500/20 -translate-x-1/2 md:translate-x-0">
+            3
+          </div>
+          <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white mb-2">Soft Water Wash</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed pr-4 md:pr-0">
+            We wash using filtered, de-mineralized water to preserve wool soft knit textures.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative pl-8 md:pl-0 md:text-center reveal-on-scroll reveal-fade-up" style="transition-delay: 300ms;">
+          <div class="absolute top-0 left-0 md:relative md:mx-auto w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-4 shadow-lg shadow-blue-500/20 -translate-x-1/2 md:translate-x-0">
+            4
+          </div>
+          <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white mb-2">Sanitized Steam Fold</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed pr-4 md:pr-0">
+            Each item is ironed at calibrated temps, sanitized, and wrapped in protective covers.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BEFORE AFTER CARDS SECTION
+       ========================================== -->
+  <section class="py-20 lg:py-28 bg-[#F8FAFC] dark:bg-[#0F172A]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll reveal-fade-up">
+        <h2 class="font-display font-semibold text-3xl sm:text-4xl text-slate-800 dark:text-white mb-4">Fabric Restoration Showcase</h2>
+        <p class="text-lg text-slate-500 dark:text-slate-400">Hover or click these comparative samples to see our stain extraction success.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Showcase 1 -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-700 shadow-sm group">
+          <div class="relative h-64 overflow-hidden">
+            <!-- Dirty Image (Before) -->
+            <img src="assets/Premium Sneaker Wash" alt="Dirty Sneaker restoration" class="w-full h-full object-cover grayscale opacity-90 transition-all duration-500 group-hover:scale-105">
+            <span class="absolute top-4 left-4 bg-red-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">Before</span>
+            <!-- Clean overlay (After) on Hover -->
+            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="bg-white dark:bg-slate-900 px-4 py-2 rounded-lg font-semibold text-sm shadow-md text-primary">
+                ✨ Clean Spotless Glow
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white mb-1">Premium Sneaker Wash</h3>
+            <p class="text-xs text-primary font-semibold mb-3">Target: Mud & Grass stains</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Deep extraction wash on knit mesh structures, returned odor-free.</p>
+          </div>
+        </div>
+
+        <!-- Showcase 2 -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/Business Velvet Blazer" absolute top-4 left-4 bg-red-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">Before</span>
+            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="bg-white dark:bg-slate-900 px-4 py-2 rounded-lg font-semibold text-sm shadow-md text-primary">
+                👔 Crisp Ink Spot Extraction
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white mb-1">Business Velvet Blazer</h3>
+            <p class="text-xs text-primary font-semibold mb-3">Target: Ink & Oil stain</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Dry-solvent spot washing and steam pressed collar restoration.</p>
+          </div>
+        </div>
+
+        <!-- Showcase 3 -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/Luxury Towels & Linens" alt="Hotel Linen laundry" class="w-full h-full object-cover opacity-90 transition-all duration-500 group-hover:scale-105">
+            <span class="absolute top-4 left-4 bg-red-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">Before</span>
+            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="bg-white dark:bg-slate-900 px-4 py-2 rounded-lg font-semibold text-sm shadow-md text-primary">
+                ✓ Bleach-free White restores
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white mb-1">Luxury Towels & Linens</h3>
+            <p class="text-xs text-primary font-semibold mb-3">Target: Yellowing & dullness</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Oxygenated wash parameters that make fabrics look white again.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BUSINESS LAUNDRY B2B SECTION
+       ========================================== -->
+  <section class="py-20 lg:py-28 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Text Left -->
+        <div class="lg:col-span-6 space-y-6 reveal-on-scroll reveal-fade-left">
+          <span class="text-xs font-bold uppercase tracking-wider text-primary">Corporate accounts</span>
+          <h2 class="font-display font-semibold text-3xl sm:text-4xl text-slate-800 dark:text-white leading-tight">
+            Commercial Laundry for Spas, Hotels, and Offices
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+            FreshFold provides reliable linen contract washes. We offer designated delivery trucks, custom invoicing cycles, and automated weekly schedules for commercial customers.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-50 dark:bg-slate-850 p-4 rounded-xl border border-gray-100 dark:border-slate-800">
+              <span class="text-2xl mb-1 block">🏨</span>
+              <h4 class="font-semibold text-sm text-slate-800 dark:text-white">Hotels & Spas</h4>
+              <p class="text-xs text-grayCustom mt-1">Soft bed linens and fluffy sanitised bath towels.</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-slate-850 p-4 rounded-xl border border-gray-100 dark:border-slate-800">
+              <span class="text-2xl mb-1 block">👔</span>
+              <h4 class="font-semibold text-sm text-slate-800 dark:text-white">Office Uniforms</h4>
+              <p class="text-xs text-grayCustom mt-1">Corporate shirts, security, and restaurant staff.</p>
+            </div>
+          </div>
+          <div>
+            <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 bg-slate-900 dark:bg-slate-700 text-white font-semibold text-sm rounded-xl hover:bg-primary transition-colors">
+              Request Business Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Image Right -->
+        <div class="lg:col-span-6 reveal-on-scroll reveal-fade-right">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <div class="h-48 rounded-2xl overflow-hidden shadow-sm">
+                <img src="assets/Towel laundry facility" alt="Towel laundry facility" class="w-full h-full object-cover">
+              </div>
+              <div class="h-64 rounded-2xl overflow-hidden shadow-sm">
+                <img src="assets/Staff folding uniforms" alt="Staff folding uniforms" class="w-full h-full object-cover">
+              </div>
+            </div>
+            <div class="space-y-4 pt-8">
+              <div class="h-64 rounded-2xl overflow-hidden shadow-sm">
+                <img src="assets/co-friendly packaging" alt="Eco-friendly packaging" class="w-full h-full object-cover">
+              </div>
+              <div class="h-48 rounded-2xl overflow-hidden shadow-sm">
+                <img src="assets/Dry cleaning hanga" alt="Dry cleaning hangar" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       B2B FEATURES GRID
+       ========================================== -->
+  <section class="py-16 bg-gray-50 dark:bg-slate-800 border-y border-gray-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-800 dark:text-white">Enterprise-Grade Logistics & Cleaning Parameters</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm sm:text-base">We provide full SLA coverage, route optimizations, and specialized chemical sorting for corporate clients.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Feature 1 -->
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 hover-lift">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-950/30 text-primary flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h3 class="font-semibold text-slate-800 dark:text-white text-base">Custom Frequencies</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Daily, bi-weekly, or on-demand logistics truck dispatches aligned to your occupancy rate cycles.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 hover-lift">
+          <div class="w-10 h-10 rounded-lg bg-teal-50 dark:bg-teal-950/30 text-teal-600 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+          </div>
+          <h3 class="font-semibold text-slate-800 dark:text-white text-base">Delicate Chemistry</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Calibrated water hardness and biodegradable enzymes to prevent fiber damage in premium hotel towels.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 hover-lift">
+          <div class="w-10 h-10 rounded-lg bg-amber-50 dark:bg-amber-950/30 text-amber-600 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+          </div>
+          <h3 class="font-semibold text-slate-800 dark:text-white text-base">Commercial Weight Sheets</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Full breakdown of cleaning costs by dry-weight parameters for transparent billing audits.</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 hover-lift">
+          <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/30 text-purple-600 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+          </div>
+          <h3 class="font-semibold text-slate-800 dark:text-white text-base">Dedicated Client Portal</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Manage your booking parameters, view invoice sheets, and track delivery trucks in real time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       B2B TESTIMONIALS SECTION
+       ========================================== -->
+  <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-primary">Trusted Partners</span>
+        <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white mt-2">What Our Commercial Clients Say</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-gray-50 dark:bg-slate-850 p-8 rounded-2xl border border-gray-100 dark:border-slate-800 relative flex flex-col justify-between hover-lift">
+          <p class="text-sm text-slate-500 dark:text-slate-400 italic leading-relaxed">
+            "FreshFold changed the game for our spa business. Towels are returned fluffy, pH-balanced, and sanitised without failure. Our delivery schedules are automated, saving our staff tons of coordination work weekly."
+          </p>
+          <div class="flex items-center gap-3.5 mt-6">
+            <div class="w-10 h-10 rounded-full bg-blue-100 text-primary font-bold grid place-items-center">SL</div>
+            <div>
+              <h4 class="font-semibold text-sm text-slate-800 dark:text-white">Sarah Lin</h4>
+              <p class="text-[10px] text-grayCustom">Manager, Zen Retreat Spa</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-gray-50 dark:bg-slate-850 p-8 rounded-2xl border border-gray-100 dark:border-slate-800 relative flex flex-col justify-between hover-lift">
+          <p class="text-sm text-slate-500 dark:text-slate-400 italic leading-relaxed">
+            "Running a boutique hotel requires dry-cleaning turnarounds within hours. FreshFold B2B provides designated cargo vans and real-time tracking. Their spot checks are top tier. Zero complaints in 2 years."
+          </p>
+          <div class="flex items-center gap-3.5 mt-6">
+            <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-600 font-bold grid place-items-center">MT</div>
+            <div>
+              <h4 class="font-semibold text-sm text-slate-800 dark:text-white">Marcus Thompson</h4>
+              <p class="text-[10px] text-grayCustom">General Manager, Grand Plaza Hotel</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-gray-50 dark:bg-slate-850 p-8 rounded-2xl border border-gray-100 dark:border-slate-800 relative flex flex-col justify-between hover-lift">
+          <p class="text-sm text-slate-500 dark:text-slate-400 italic leading-relaxed">
+            "We coordinate uniform laundry for over 150 staff members. FreshFold's bulk sorting and tracking is flawless. We receive clear invoice sheets and automated monthly routing logs. High fidelity care."
+          </p>
+          <div class="flex items-center gap-3.5 mt-6">
+            <div class="w-10 h-10 rounded-full bg-purple-100 text-purple-600 font-bold grid place-items-center">AH</div>
+            <div>
+              <h4 class="font-semibold text-sm text-slate-800 dark:text-white">Amanda Hayes</h4>
+              <p class="text-[10px] text-grayCustom">Uniform Director, Metro Security</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       B2B SAVINGS CALCULATOR
+       ========================================== -->
+  <section class="py-20 bg-gray-50 dark:bg-slate-800 border-y border-gray-100 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-primary">ROI Assessment</span>
+        <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white mt-2">Calculate Your Business Savings</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm sm:text-base">See how much time, money, and water your business saves by shifting to FreshFold's outsourced logistics routing.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-12 items-stretch">
+        <!-- Inputs Left -->
+        <div class="lg:col-span-6 bg-white dark:bg-slate-900 p-8 rounded-3xl border border-gray-150 dark:border-slate-750 shadow-sm space-y-8 flex flex-col justify-between">
+          <div class="space-y-6">
+            <h3 class="font-display font-semibold text-xl text-slate-800 dark:text-white">Logistics & Scale Parameters</h3>
+            
+            <!-- Slider 1: Weight -->
+            <div class="space-y-3">
+              <div class="flex justify-between items-center text-sm font-semibold text-slate-700 dark:text-slate-350">
+                <span>Weekly Linen Weight</span>
+                <span class="text-primary"><span id="calc-weight-val">500</span> lbs</span>
+              </div>
+              <input type="range" id="calc-weight" min="100" max="5000" step="50" value="500" class="w-full h-2 bg-gray-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-primary">
+              <div class="flex justify-between text-[10px] text-grayCustom">
+                <span>100 lbs (Boutique)</span>
+                <span>5,000 lbs (Resort Scale)</span>
+              </div>
+            </div>
+
+            <!-- Slider 2: FTEs -->
+            <div class="space-y-3">
+              <div class="flex justify-between items-center text-sm font-semibold text-slate-700 dark:text-slate-350">
+                <span>Current Laundry Staff (FTEs)</span>
+                <span class="text-primary"><span id="calc-staff-val">2</span> Staff</span>
+              </div>
+              <input type="range" id="calc-staff" min="0" max="10" step="1" value="2" class="w-full h-2 bg-gray-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-primary">
+              <div class="flex justify-between text-[10px] text-grayCustom">
+                <span>0 (Self Service)</span>
+                <span>10 staff members</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-xl text-xs text-slate-650 dark:text-slate-400 leading-relaxed border border-blue-100 dark:border-blue-900/30">
+            💡 Calculated estimates are based on national hospitality averages, utility billing sheets, detergent supply scales, and route-density parameters.
+          </div>
+        </div>
+
+        <!-- Outputs Right -->
+        <div class="lg:col-span-6 bg-gradient-to-br from-slate-900 to-slate-950 p-8 rounded-3xl text-white flex flex-col justify-between border border-slate-800">
+          <div class="space-y-6">
+            <h3 class="font-display font-semibold text-xl">Estimated Resource Impact</h3>
+            
+            <div class="grid grid-cols-2 gap-4">
+              <!-- Output 1 -->
+              <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
+                <span class="text-gray-400 text-[10px] uppercase font-bold tracking-wider">Time Reclaimed</span>
+                <p class="text-2xl sm:text-3xl font-display font-bold text-sky-300 mt-1"><span id="calc-hours-out">80</span> hrs</p>
+                <span class="text-[9px] text-gray-500">weekly operations saved</span>
+              </div>
+              <!-- Output 2 -->
+              <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
+                <span class="text-gray-400 text-[10px] uppercase font-bold tracking-wider">Monthly Savings</span>
+                <p class="text-2xl sm:text-3xl font-display font-bold text-emerald-400 mt-1">$<span id="calc-cash-out">2,600</span></p>
+                <span class="text-[9px] text-gray-500">out of pocket reduction</span>
+              </div>
+              <!-- Output 3 -->
+              <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
+                <span class="text-gray-400 text-[10px] uppercase font-bold tracking-wider">Water Conserved</span>
+                <p class="text-2xl sm:text-3xl font-display font-bold text-blue-400 mt-1"><span id="calc-water-out">4,500</span> gal</p>
+                <span class="text-[9px] text-gray-500">eco-efficiency score</span>
+              </div>
+              <!-- Output 4 -->
+              <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
+                <span class="text-gray-400 text-[10px] uppercase font-bold tracking-wider">CO2 Prevented</span>
+                <p class="text-2xl sm:text-3xl font-display font-bold text-teal-400 mt-1"><span id="calc-co2-out">175</span> kg</p>
+                <span class="text-[9px] text-gray-500">carbon credits score</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6">
+            <button class="open-booking-modal-btn w-full py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold text-sm rounded-xl shadow-lg hover:shadow-xl hover:shadow-blue-500/20 transition duration-200">
+              Request Full Business Proposal
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Live update calculations for the B2B calculator
+    (function () {
+      const weightInput = document.getElementById('calc-weight');
+      const staffInput = document.getElementById('calc-staff');
+
+      const weightVal = document.getElementById('calc-weight-val');
+      const staffVal = document.getElementById('calc-staff-val');
+
+      const hoursOut = document.getElementById('calc-hours-out');
+      const cashOut = document.getElementById('calc-cash-out');
+      const waterOut = document.getElementById('calc-water-out');
+      const co2Out = document.getElementById('calc-co2-out');
+
+      function calculate() {
+        if (!weightInput || !staffInput) return;
+        const weight = parseInt(weightInput.value);
+        const staff = parseInt(staffInput.value);
+
+        // Update slider values
+        if (weightVal) weightVal.innerText = weight.toLocaleString();
+        if (staffVal) staffVal.innerText = staff;
+
+        // Formulate output calculations
+        const hours = Math.round(weight * 0.12 + staff * 12);
+        const cash = Math.round(staff * 1400 + weight * 0.55);
+        const water = Math.round(weight * 9.5);
+        const co2 = Math.round(weight * 0.38);
+
+        // Render calculations
+        if (hoursOut) hoursOut.innerText = hours.toLocaleString();
+        if (cashOut) cashOut.innerText = cash.toLocaleString();
+        if (waterOut) waterOut.innerText = water.toLocaleString();
+        if (co2Out) co2Out.innerText = co2.toLocaleString();
+      }
+
+      if (weightInput && staffInput) {
+        weightInput.addEventListener('input', calculate);
+        staffInput.addEventListener('input', calculate);
+        calculate(); // Run initial render
+      }
+    })();
+  </script>
+
+  <!-- ==========================================
+       FINAL CTA
+       ========================================== -->
+  <section class="py-20 bg-gradient-to-br from-primary to-secondary text-white text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl">Save 4+ Hours of Chores Every Week</h2>
+      <p class="text-white/80 max-w-md mx-auto">Delegate your washing load to FreshFold professionals and spend your time doing what you love.</p>
+      <div>
+        <button class="open-booking-modal-btn ripple-btn px-8 py-4 bg-slate-900 text-white font-semibold rounded-full shadow-xl hover:bg-slate-800 hover:-translate-y-0.5 transition-all">
+          Book Pickup Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="bg-slate-900 text-slate-400 pt-12 sm:pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 mb-10 sm:mb-12">
+      <!-- Description -->
+      <div class="col-span-2 sm:col-span-2 md:col-span-3 lg:col-span-2 space-y-4">
+        <a href="index.html">
+           <div class="flex items-center text-white">
+          <svg class="h-8 w-8 text-primary mr-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="10" width="70" height="80" rx="12" stroke="currentColor" stroke-width="8" fill="none"/>
+            <line x1="25" y1="26" x2="75" y2="26" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="50" cy="60" r="24" stroke="currentColor" stroke-width="6" fill="none"/>
+          </svg>
+          <span class="font-display font-bold text-xl">FreshFold</span>
+        </div>
+        </a>
+       
+        <p class="text-sm text-slate-400 pr-6 leading-relaxed">
+          Premium dry cleaning and laundry pickup services tailored for busy lives, commercial uniforms, and luxury garments.
+        </p>
+        <!-- Social Icons -->
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Facebook">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Instagram">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Twitter">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h4 class="font-display font-semibold text-white text-sm uppercase">Quick Links</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+         <li><a href="404.html" class="hover:text-white transition-colors">404 Page</a></li>
+
+         
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="space-y-4">
+        <h4 class="font-display font-semibold text-white text-sm uppercase">Services</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="services.html" class="hover:text-white transition-colors">Laundry Wash</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Steam Pressing</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Commercial Linen</a></li>
+           <li><a href="pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="coming-soon.html" class="hover:text-white transition-colors">Coming Soon</a></li>
+          <li><button class="open-booking-modal-btn text-left hover:text-white transition-colors focus:outline-none">Book Now</button></li>
+        </ul>
+      </div>
+
+   
+
+      <!-- Newsletter Column -->
+      <div class="space-y-4">
+        <h4 class="font-display font-semibold text-white text-sm uppercase">Newsletter</h4>
+        <p class="text-xs leading-relaxed text-slate-400">Subscribe for special promo codes and fabric care updates.</p>
+        <form onsubmit="event.preventDefault(); alert('Subscribed to FreshFold Newsletter!');" class="space-y-2">
+          <input type="email" required placeholder="Your email address" class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white outline-none focus:border-primary placeholder-slate-500">
+          <button type="submit" class="w-full py-2 bg-gradient-to-r from-primary to-secondary text-white text-xs font-semibold rounded-lg hover:scale-102 transition-transform">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs">
+      <p>&copy; 2026 FreshFold Laundry Inc. All rights reserved. Premium responsive laundry designs.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       WIZARD BOOKING MODAL
+       ========================================== -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 backdrop-blur-sm px-4">
+    <div class="bg-white dark:bg-slate-800 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-gray-100 dark:border-slate-700 flex flex-col max-h-[90vh]">
+      <div class="px-6 py-5 border-b border-gray-100 dark:border-slate-700 flex justify-between items-center bg-gray-50 dark:bg-slate-800/80">
+        <div>
+          <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white">Book Laundry Pickup</h3>
+          <p class="text-xs text-grayCustom mt-0.5">Fresh cleaning at your doorstep in 4 steps</p>
+        </div>
+        <button class="close-booking-modal-btn p-1.5 rounded-lg text-gray-400 hover:text-gray-700 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-700 focus:outline-none">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="px-6 py-4 bg-blue-50/50 dark:bg-slate-900/30 border-b border-gray-100 dark:border-slate-700 flex items-center justify-between">
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse"><span class="wizard-step-indicator w-6 h-6 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">1</span><span class="text-xs font-semibold text-slate-700 dark:text-slate-300">Schedule</span></div>
+        <div class="h-0.5 bg-gray-200 dark:bg-slate-700 flex-1 mx-2"></div>
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse"><span class="wizard-step-indicator w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center dark:bg-slate-700 dark:text-slate-400">2</span><span class="text-xs font-medium text-slate-400 dark:text-slate-500">Service</span></div>
+        <div class="h-0.5 bg-gray-200 dark:bg-slate-700 flex-1 mx-2"></div>
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse"><span class="wizard-step-indicator w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center dark:bg-slate-700 dark:text-slate-400">3</span><span class="text-xs font-medium text-slate-400 dark:text-slate-500">Details</span></div>
+        <div class="h-0.5 bg-gray-200 dark:bg-slate-700 flex-1 mx-2"></div>
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse"><span class="wizard-step-indicator w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center dark:bg-slate-700 dark:text-slate-400">4</span><span class="text-xs font-medium text-slate-400 dark:text-slate-500">Confirm</span></div>
+      </div>
+      <form id="booking-wizard-form" class="flex-1 overflow-y-auto px-6 py-6" onsubmit="event.preventDefault();">
+        <div id="wizard-form-content">
+          <!-- STEP 1 -->
+          <div class="wizard-step space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Select Pickup Schedule</h4>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Preferred Pickup Date</label>
+              <input type="date" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-transparent text-slate-700 dark:text-slate-300 focus:border-primary outline-none text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Time Window Slot</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-transparent text-slate-700 dark:text-slate-300 focus:border-primary outline-none text-sm">
+                <option value="morning">Morning (08:00 AM - 12:00 PM)</option>
+                <option value="afternoon">Afternoon (12:00 PM - 04:00 PM)</option>
+                <option value="evening">Evening (04:00 PM - 08:00 PM)</option>
+              </select>
+            </div>
+          </div>
+          <!-- STEP 2 -->
+          <div class="wizard-step hidden space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Select Laundry Services</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="border border-gray-200 dark:border-slate-700 p-3.5 rounded-xl flex items-center space-x-2.5 cursor-pointer hover:bg-blue-50/50 dark:hover:bg-slate-900/30">
+                <input type="checkbox" checked class="accent-primary h-4.5 w-4.5">
+                <span class="text-sm font-semibold dark:text-white">Wash & Fold</span>
+              </label>
+              <label class="border border-gray-200 dark:border-slate-700 p-3.5 rounded-xl flex items-center space-x-2.5 cursor-pointer hover:bg-blue-50/50 dark:hover:bg-slate-900/30">
+                <input type="checkbox" class="accent-primary h-4.5 w-4.5">
+                <span class="text-sm font-semibold dark:text-white">Dry Cleaning</span>
+              </label>
+            </div>
+          </div>
+          <!-- STEP 3 -->
+          <div class="wizard-step hidden space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Pickup Address</h4>
+            <textarea rows="3" required placeholder="Apartment / Suite / Street address" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-transparent text-slate-700 dark:text-slate-300 focus:border-primary outline-none text-sm resize-none"></textarea>
+          </div>
+          <!-- STEP 4 -->
+          <div class="wizard-step hidden space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Order Confirmation</h4>
+            <div class="bg-gray-50 dark:bg-slate-900 p-4 rounded-2xl border border-gray-100 dark:border-slate-800 space-y-3">
+              <div class="flex justify-between text-sm"><span class="text-slate-500">Estimated Weight</span><span class="font-semibold text-slate-800 dark:text-white">15 lbs</span></div>
+              <div class="flex justify-between text-sm"><span class="text-slate-500">Estimated Cost</span><span class="font-bold text-primary">$35.00</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="wizard-success-content" class="hidden text-center py-10 space-y-4">
+          <div class="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 flex items-center justify-center mx-auto text-3xl">✓</div>
+          <h3 class="font-display font-semibold text-xl text-slate-800 dark:text-white">Pickup Confirmed!</h3>
+        </div>
+      </form>
+      <div id="wizard-actions" class="px-6 py-4 border-t border-gray-100 dark:border-slate-700 bg-gray-50 dark:bg-slate-800/80 flex justify-between items-center">
+        <button id="wizard-prev-btn" class="px-5 py-2.5 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 font-semibold text-sm rounded-xl text-slate-700 dark:text-slate-200 transition-colors invisible">Back</button>
+        <button id="wizard-next-btn" class="px-6 py-2.5 bg-primary text-white font-semibold text-sm rounded-xl hover:bg-blue-700 transition-colors shadow">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Widgets -->
+  <button id="whatsapp-widget-btn" class="fixed bottom-6 right-6 z-40 bg-emerald-500 text-white p-4 rounded-full shadow-2xl" aria-label="Chat on WhatsApp"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.019-5.117-2.877-6.979C16.582 1.9 14.1 1.079 11.999 1.079c-5.441 0-9.87 4.422-9.875 9.866-.001 1.8.49 3.548 1.418 5.12L2.53 21.444l4.117-1.29z"/></svg></button>
+  <div id="whatsapp-widget-box" class="fixed bottom-24 right-6 z-40 w-80 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-gray-100 dark:border-slate-700 hidden flex-col overflow-hidden">
+    <div class="bg-emerald-500 text-white p-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2"><div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">💬</div><div><h4 class="text-xs font-bold">FreshFold Support</h4></div></div>
+    </div>
+    <div class="p-4 bg-gray-50 dark:bg-slate-900 text-xs flex-1 max-h-48 overflow-y-auto">
+      <div class="bg-white dark:bg-slate-800 p-2.5 rounded-xl border border-gray-100 dark:border-slate-700 max-w-[85%]">Hey! How can we help?</div>
+    </div>
+    <div class="p-3 bg-white dark:bg-slate-800 border-t border-gray-100 dark:border-slate-700 flex items-center space-x-2">
+      <input id="whatsapp-widget-input" type="text" placeholder="Type message..." class="w-full bg-gray-50 dark:bg-slate-900 border rounded-full px-3 py-2 text-xs outline-none">
+      <button id="whatsapp-widget-send" class="bg-emerald-500 text-white p-2 rounded-full"><svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+    </div>
+  </div>
+
+  <button id="back-to-top" class="fixed bottom-6 left-6 z-40 bg-slate-900/80 dark:bg-slate-700/80 text-white p-3.5 rounded-full shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all" aria-label="Scroll back to top"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

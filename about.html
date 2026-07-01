@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='15' y='10' width='70' height='80' rx='12' stroke='%232563EB' stroke-width='8'/%3E%3Cline x1='25' y1='26' x2='75' y2='26' stroke='%232563EB' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='35' cy='20' r='4' fill='%232563EB'/%3E%3Ccircle cx='47' cy='20' r='2' fill='%232563EB'/%3E%3Ccircle cx='55' cy='20' r='2' fill='%232563EB'/%3E%3Ccircle cx='50' cy='60' r='24' stroke='%232563EB' stroke-width='6'/%3E%3Cpath d='M50 48C50 48 58 56.5 58 61.5C58 65.9183 54.4183 69.5 50 69.5C45.5817 69.5 42 65.9183 42 61.5C42 56.5 50 48 50 48Z' fill='%232563EB'/%3E%3C/svg%3E">
+  <title>About FreshFold - Our Story, Team & Standards</title>
+  <meta name="description" content="Learn about FreshFold Laundry's history, leadership team, eco-friendly standards, and mission to deliver clean clothes.">
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB',
+            secondary: '#38BDF8',
+            accent: '#0EA5E9',
+            success: '#22C55E',
+            text: '#1E293B',
+            darkBg: '#0F172A',
+            lightBg: '#F8FAFC',
+            grayCustom: '#64748B'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#F8FAFC] dark:bg-[#0F172A] text-[#1E293B] dark:text-slate-200 transition-colors duration-300">
+
+  <!-- ==========================================
+       HEADER / NAVBAR
+       ========================================== -->
+   <header id="main-header" class="fixed top-0 left-0 right-0 z-50 py-5 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center group">
+          <svg class="h-9 w-9 mr-2 transition-transform duration-300 group-hover:rotate-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="nav-logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2563EB" />
+                <stop offset="100%" stop-color="#38BDF8" />
+              </linearGradient>
+            </defs>
+            <rect x="15" y="10" width="70" height="80" rx="12" stroke="url(#nav-logo-grad)" stroke-width="8" fill="none"/>
+            <line x1="25" y1="26" x2="75" y2="26" stroke="url(#nav-logo-grad)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="35" cy="20" r="4" fill="url(#nav-logo-grad)"/>
+            <circle cx="47" cy="20" r="2" fill="url(#nav-logo-grad)"/>
+            <circle cx="55" cy="20" r="2" fill="url(#nav-logo-grad)"/>
+            <circle cx="50" cy="60" r="24" stroke="url(#nav-logo-grad)" stroke-width="6" fill="none"/>
+            <path d="M50 48C50 48 58 56.5 58 61.5C58 65.9183 54.4183 69.5 50 69.5C45.5817 69.5 42 65.9183 42 61.5C42 56.5 50 48 50 48Z" fill="url(#nav-logo-grad)"/>
+          </svg>
+          <span class="font-display font-semibold text-xl tracking-tight text-slate-800 dark:text-white group-hover:text-primary transition-colors">FreshFold</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden xl:flex items-center xl:space-x-2">
+          <a href="index.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+          <a href="home2.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home 2</a>
+          <a href="about.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-primary hover:text-primary transition-colors">About Us</a>
+          <a href="services.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Services</a>
+          <a href="gallery.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Gallery</a>
+          <a href="pricing.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Pricing</a>
+          <a href="contact.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
+          <a href="portal.html" class="px-2 xl:px-3 py-2 text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">User Portal</a>
+        </nav>
+
+        <!-- Right Side Toggles & Actions -->
+        <div class="hidden xl:flex items-center xl:space-x-4">
+          <!-- LTR/RTL Toggle -->
+          <button class="dir-toggle-btn p-1.5 xl:p-2 rounded-lg text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-200" aria-label="Toggle language direction">
+            <span class="dir-label text-[10px] xl:text-xs font-bold tracking-wider uppercase">RTL</span>
+          </button>
+
+          <!-- Light/Dark Toggle -->
+          <button class="theme-toggle-btn p-1.5 xl:p-2 rounded-lg text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-200" aria-label="Toggle theme">
+            <!-- Moon Icon (Light Mode Active) -->
+            <svg class="theme-moon-icon h-4.5 w-4.5 xl:h-5 xl:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <!-- Sun Icon (Dark Mode Active) -->
+            <svg class="theme-sun-icon h-4.5 w-4.5 xl:h-5 xl:w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707m12.728-12.728l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+            </svg>
+          </button>
+
+          <!-- Action Buttons -->
+          <a href="login.html" class="text-xs xl:text-sm font-semibold text-gray-700 dark:text-slate-200 hover:text-primary transition-colors">Login</a>
+          <a href="booking.html" class="ripple-btn px-4 xl:px-5 py-2 xl:py-2.5 bg-gradient-to-r from-primary to-secondary text-white text-xs xl:text-sm font-semibold rounded-full shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 hover:-translate-y-0.5 transition-all duration-300">
+            Book Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Controls -->
+        <!-- Mobile Menu Controls -->
+        <div class="flex items-center space-x-2 xl:hidden">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none" aria-expanded="false" aria-label="Toggle mobile menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu (Animated hamburger target) -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden xl:hidden flex-col bg-white dark:bg-slate-900 px-6 py-6 transition-all duration-300 overflow-y-auto max-h-screen pb-12">
+    <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center">
+        <svg class="h-8 w-8 text-primary mr-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15" y="10" width="70" height="80" rx="12" stroke="currentColor" stroke-width="8" fill="none"/>
+          <line x1="25" y1="26" x2="75" y2="26" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="50" cy="60" r="24" stroke="currentColor" stroke-width="6" fill="none"/>
+        </svg>
+        <span class="font-display font-semibold text-lg dark:text-white">FreshFold</span>
+      </div>
+      <button id="mobile-menu-close" class="p-2 rounded-lg text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <nav class="flex flex-col space-y-4 text-center">
+      <a href="index.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Home</a>
+      <a href="home2.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Home 2</a>
+      <a href="about.html" class="text-xl font-medium text-primary py-2 border-b border-gray-100 dark:border-slate-800">About Us</a>
+      <a href="services.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Services</a>
+      <a href="gallery.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Gallery</a>
+      <a href="pricing.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Pricing</a>
+      <a href="contact.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2 border-b border-gray-100 dark:border-slate-800">Contact</a>
+      <a href="portal.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2">User Portal</a>
+      
+      <div class="pt-6 flex flex-col space-y-4">
+        <a href="login.html" class="w-full text-center py-3 border border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-200 font-semibold rounded-full">Login</a>
+        <a href="booking.html" class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg text-center">Book Now</a>
+      </div>
+
+      <!-- Mobile Toggles Inside Menu Bar -->
+      <div class="mt-6 pt-6 border-t border-gray-100 dark:border-slate-800 flex items-center justify-center space-x-4">
+        <button class="dir-toggle-btn p-3.5 rounded-2xl bg-gray-50 dark:bg-slate-800 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white flex items-center justify-center gap-2 w-1/2" aria-label="Toggle language direction">
+          <span class="dir-label text-xs font-bold uppercase">RTL</span>
+        </button>
+        <button class="theme-toggle-btn p-3.5 rounded-2xl bg-gray-50 dark:bg-slate-800 text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white flex items-center justify-center w-1/2" aria-label="Toggle theme">
+          <svg class="theme-moon-icon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+          <svg class="theme-sun-icon h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707m12.728-12.728l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ==========================================
+       BREADCRUMB / HERO SECTION
+       ========================================== -->
+  <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-white dark:bg-slate-900 text-slate-900 dark:text-white transition-colors duration-300">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Image Left -->
+      <div class="lg:col-span-6 relative flex justify-center items-center reveal-on-scroll reveal-fade-left active">
+        <div class="relative w-full max-w-[500px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 dark:border-slate-800">
+          <img src="assets/Laundry Service Quality" alt="Premium Ironing and folding laundry" class="w-full h-full object-cover">
+          
+          <!-- Floating element -->
+          <div class="absolute bottom-6 left-6 right-6 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-4 rounded-2xl border border-slate-200 dark:border-white/10 shadow-lg flex items-center space-x-3.5 rtl:space-x-reverse">
+            <span class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">⚡</span>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-primary">Express Cycle</h4>
+              <p class="text-sm font-semibold text-slate-900 dark:text-white">Cleaned and delivered in 12 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Right -->
+      <div class="lg:col-span-6 space-y-6 text-center lg:text-left rtl:lg:text-right reveal-on-scroll reveal-fade-right active">
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-300 text-sm font-semibold uppercase tracking-wider border border-blue-500/20">
+          👔 Commercial & Elite Care
+        </div>
+        <h1 class="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl text-slate-900 dark:text-white leading-tight">
+          Commercial and Elite <span class="text-primary">Laundry Care</span> Done Right
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+          Tailored logistics routing, bulk wash capacity, and high-fidelity stain treatment parameters for businesses, boutiques, and households.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <button class="open-booking-modal-btn ripple-btn w-full sm:w-auto px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg shadow-blue-500/25">
+            Schedule Pickup
+          </button>
+          <a href="pricing.html" class="w-full sm:w-auto text-center px-8 py-4 bg-slate-100 dark:bg-white/10 text-slate-900 dark:text-white hover:bg-slate-200 dark:hover:bg-white/20 font-semibold rounded-full border border-slate-200 dark:border-white/20 transition-all">
+            B2B Pricing
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ==========================================
+       COMPANY STORY & VALUES
+       ========================================== -->
+  <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center mb-24">
+        <!-- Story text -->
+        <div class="lg:col-span-6 space-y-6 reveal-on-scroll reveal-fade-left">
+          <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white">Founded to Modernize Your Laundry Day</h2>
+          <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+            FreshFold Laundry began in 2011 with a simple realization: laundry is an archaic, time-consuming chore that hasn't adapted to modern schedules. We wanted to build a service that respects your time, values delicate fabrics, and protects the environment.
+          </p>
+          <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+            Today, we are proud to serve over 10,000 active residential and commercial clients across 35 pickup locations. Every bag is sorted individually and washed in filtered soft water utilizing biodegradable solvents.
+          </p>
+        </div>
+        <!-- Story image/illustration -->
+        <div class="lg:col-span-6 reveal-on-scroll reveal-fade-right">
+          <div class="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100 dark:border-slate-800 aspect-video">
+            <img src="assets/abtimg" alt="FreshFold Laundry facility sorting line" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Mission -->
+        <div class="bg-gray-50 dark:bg-slate-800 p-8 rounded-2xl border border-gray-150 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-950/30 text-primary flex items-center justify-center mb-5">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-slate-800 dark:text-white mb-3">Our Mission</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">To automate laundry day for families and businesses so they can focus on their primary callings.</p>
+        </div>
+        <!-- Vision -->
+        <div class="bg-gray-50 dark:bg-slate-800 p-8 rounded-2xl border border-gray-150 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col" style="transition-delay: 100ms;">
+          <div class="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950/30 text-teal-600 flex items-center justify-center mb-5">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-slate-800 dark:text-white mb-3">Our Vision</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">To become the national standard for carbon-neutral dry cleaning and automated home pickup services.</p>
+        </div>
+        <!-- Values -->
+        <div class="bg-gray-50 dark:bg-slate-800 p-8 rounded-2xl border border-gray-150 dark:border-slate-700 hover-lift reveal-on-scroll reveal-fade-up flex flex-col" style="transition-delay: 200ms;">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 dark:bg-amber-950/30 text-amber-600 flex items-center justify-center mb-5">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-3c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-3c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-slate-800 dark:text-white mb-3">Our Values</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Fabric integrity, transparent pricing parameters, absolute punctuality, and eco-responsibility pickup services.</p>
+        </div>
+      </div>
+
+      <!-- Facility Technology and Standards -->
+      <div class="mt-24 space-y-12">
+        <div class="text-center max-w-3xl mx-auto">
+          <span class="text-xs font-bold uppercase tracking-wider text-primary">Advanced Engineering</span>
+          <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-800 dark:text-white mt-2">Our Processing Facility Standards</h2>
+          <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm sm:text-base">We invest in premium garment restoration systems that replace harsh dry cleaning chemistry with gentle, advanced extraction logic.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Tech 1 -->
+          <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-800 shadow-sm hover-lift flex flex-col justify-between h-full">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-950/30 text-primary flex items-center justify-center mb-4">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+              </div>
+              <h4 class="font-semibold text-slate-800 dark:text-white text-base">High-G Wash Extractors</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Programmable extraction cycles rotate at high speeds to safely extract moisture, reducing gas-dry cycles and extending fabric lifespans.</p>
+            </div>
+            <div class="border-t border-gray-100 dark:border-slate-850 pt-4 mt-4 text-[10px] text-grayCustom flex justify-between">
+              <span>Extract rating</span>
+              <span>Up to 450 G-Force</span>
+            </div>
+          </div>
+
+          <!-- Tech 2 -->
+          <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-800 shadow-sm hover-lift flex flex-col justify-between h-full">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-teal-50 dark:bg-teal-950/30 text-teal-600 flex items-center justify-center mb-4">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              </div>
+              <h4 class="font-semibold text-slate-800 dark:text-white text-base">Ozone Sanitization Cabinets</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Infused cold-water ozone cycles sanitize fabrics dynamically, destroying odor bacteria and mold spores without requiring high temperature wash damage.</p>
+            </div>
+            <div class="border-t border-gray-100 dark:border-slate-850 pt-4 mt-4 text-[10px] text-grayCustom flex justify-between">
+              <span>Sanitize rate</span>
+              <span>99.9% Microbial reduction</span>
+            </div>
+          </div>
+
+          <!-- Tech 3 -->
+          <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-800 shadow-sm hover-lift flex flex-col justify-between h-full">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-purple-50 dark:bg-purple-950/30 text-purple-600 flex items-center justify-center mb-4">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M9 4v16M15 4v16" /></svg>
+              </div>
+              <h4 class="font-semibold text-slate-800 dark:text-white text-base">De-Mineralized Soft Water</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Multi-stage reverse osmosis filtration strips hard magnesium and calcium minerals, keeping colors bright and fibers soft.</p>
+            </div>
+            <div class="border-t border-gray-100 dark:border-slate-850 pt-4 mt-4 text-[10px] text-grayCustom flex justify-between">
+              <span>Purity rating</span>
+              <span>&lt; 10 ppm TDS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MILESTONE TIMELINE
+       ========================================== -->
+  <section class="py-20 bg-gray-50 dark:bg-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll reveal-fade-up">
+        <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white mb-4">Milestones & History</h2>
+        <p class="text-slate-500 dark:text-slate-400">Our journey from a single laundry van to an enterprise laundry leader.</p>
+      </div>
+
+      <div class="relative border-l-2 border-primary/20 dark:border-slate-750 ml-4 md:ml-0 md:border-l-0 md:space-y-12">
+        
+        <!-- Timeline Item 1 -->
+        <div class="relative pl-8 md:grid md:grid-cols-12 md:gap-8 items-center reveal-on-scroll reveal-fade-up">
+          <div class="absolute top-1/2 left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2 border-4 border-white dark:border-slate-800 z-10"></div>
+          <div class="md:col-span-5 md:text-right text-sm font-display font-bold text-primary">2011</div>
+          <div class="md:col-span-2"></div>
+          <div class="md:col-span-5 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-750 shadow-sm">
+            <h4 class="font-semibold text-slate-800 dark:text-white">FreshFold Launch</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Started with a single delivery vehicle and dry cleaning sorting facility in West End.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="relative pl-8 md:grid md:grid-cols-12 md:gap-8 items-center reveal-on-scroll reveal-fade-up">
+          <div class="absolute top-1/2 left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2 border-4 border-white dark:border-slate-800 z-10"></div>
+          <div class="md:col-span-5 md:order-last text-sm font-display font-bold text-primary">2015</div>
+          <div class="md:col-span-2"></div>
+          <div class="md:col-span-5 md:order-first bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-750 shadow-sm md:text-right">
+            <h4 class="font-semibold text-slate-800 dark:text-white">Eco Facility expansion</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Constructed our solar-powered central washing plant, reducing laundry emissions by 40%.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="relative pl-8 md:grid md:grid-cols-12 md:gap-8 items-center reveal-on-scroll reveal-fade-up">
+          <div class="absolute top-1/2 left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2 border-4 border-white dark:border-slate-800 z-10"></div>
+          <div class="md:col-span-5 md:text-right text-sm font-display font-bold text-primary">2019</div>
+          <div class="md:col-span-2"></div>
+          <div class="md:col-span-5 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-750 shadow-sm">
+            <h4 class="font-semibold text-slate-800 dark:text-white">Mobile Portal launch</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Rolled out native iOS and Android apps to automate delivery tracking and address saves.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GREEN INITIATIVES / ECO OPERATIONS
+       ========================================== -->
+  <section class="py-20 bg-emerald-50/50 dark:bg-emerald-950/10 border-y border-emerald-100/50 dark:border-emerald-900/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Carbon-Neutral Operations</span>
+        <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white mt-2">Our Eco-Friendly Laundry Blueprint</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 text-sm sm:text-base">We prove that laundry doesn't have to cost the Earth. We integrate de-mineralized washing setups with clean energy systems.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <!-- Metric 1 -->
+        <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-emerald-100 dark:border-slate-800 shadow-sm hover-lift">
+          <span class="font-display font-bold text-4xl sm:text-5xl text-emerald-600 dark:text-emerald-400">85%</span>
+          <h4 class="font-semibold text-slate-800 dark:text-white text-base mt-4">Water Recycled</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Closed-loop de-mineralized water systems filter and recycle rinse cycles, saving millions of gallons annually.</p>
+        </div>
+        <!-- Metric 2 -->
+        <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-emerald-100 dark:border-slate-800 shadow-sm hover-lift" style="transition-delay: 100ms;">
+          <span class="font-display font-bold text-4xl sm:text-5xl text-emerald-600 dark:text-emerald-400">100%</span>
+          <h4 class="font-semibold text-slate-800 dark:text-white text-base mt-4">Solar Driven</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Our central sorting facilities run entirely on clean solar power arrays, eliminating greenhouse gas outputs.</p>
+        </div>
+        <!-- Metric 3 -->
+        <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-emerald-100 dark:border-slate-800 shadow-sm hover-lift" style="transition-delay: 200ms;">
+          <span class="font-display font-bold text-4xl sm:text-5xl text-emerald-600 dark:text-emerald-400">Zero</span>
+          <h4 class="font-semibold text-slate-800 dark:text-white text-base mt-4">Hanger Waste</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Through our active recycle program, customers return metal hangers and plastic shields for sanitization and reuse.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CUSTOMER CARE GUARANTEE
+       ========================================== -->
+  <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Image Left -->
+        <div class="lg:col-span-6 reveal-on-scroll reveal-fade-left">
+          <div class="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100 dark:border-slate-800 aspect-[4/3]">
+            <img src="assets/abtimg1" alt="Perfectly folded clean laundry garments" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Text Right -->
+        <div class="lg:col-span-6 space-y-6 reveal-on-scroll reveal-fade-right">
+          <span class="text-xs font-bold uppercase tracking-wider text-primary">Absolute Peace of Mind</span>
+          <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white">Our 100% Satisfaction Clause</h2>
+          <p class="text-slate-600 dark:text-slate-350 leading-relaxed">
+            At FreshFold, we treat your items with custom laundry parameters. If any item is not returned in pristine, stain-free condition, we will wash or dry clean it again at absolutely no cost.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3 rtl:space-x-reverse">
+              <span class="p-1 bg-blue-100 dark:bg-blue-900/30 rounded text-primary mt-1">✓</span>
+              <p class="text-sm text-slate-600 dark:text-slate-400"><strong>Full Fabric Insurance:</strong> Every laundry bag is insured from pickup until it arrives at your doorstep.</p>
+            </div>
+            <div class="flex items-start space-x-3 rtl:space-x-reverse">
+              <span class="p-1 bg-blue-100 dark:bg-blue-900/30 rounded text-primary mt-1">✓</span>
+              <p class="text-sm text-slate-600 dark:text-slate-400"><strong>Calibrated Temperature Controls:</strong> Solvents and water cycles are dialed to precise limits matching manufacturer labels.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MEET OUR TEAM
+       ========================================== -->
+  <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll reveal-fade-up">
+        <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white mb-4">Our Professional Leadership</h2>
+        <p class="text-slate-500 dark:text-slate-400">The garment caretakers and operations experts behind every bag we wash.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Member 1 -->
+        <div class="text-center group reveal-on-scroll reveal-fade-up">
+          <div class="relative w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 shadow-md border-4 border-white dark:border-slate-800">
+            <img src="assets/team1" alt="Jonathan Carter CEO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="font-display font-semibold text-lg text-slate-800 dark:text-white">Jonathan Carter</h4>
+          <p class="text-xs text-primary font-medium uppercase tracking-wider mt-1">Founder & CEO</p>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="text-center group reveal-on-scroll reveal-fade-up" style="transition-delay: 100ms;">
+          <div class="relative w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 shadow-md border-4 border-white dark:border-slate-800">
+            <img src="assets/team2" alt="Emily Watson Quality Head" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="font-display font-semibold text-lg text-slate-800 dark:text-white">Emily Watson</h4>
+          <p class="text-xs text-primary font-medium uppercase tracking-wider mt-1">Head of Fabric Quality</p>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="text-center group reveal-on-scroll reveal-fade-up" style="transition-delay: 200ms;">
+          <div class="relative w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 shadow-md border-4 border-white dark:border-slate-800">
+            <img src="assets/team3" alt="Marcus Vance Logistics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="font-display font-semibold text-lg text-slate-800 dark:text-white">Marcus Vance</h4>
+          <p class="text-xs text-primary font-medium uppercase tracking-wider mt-1">Director of Logistics</p>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="text-center group reveal-on-scroll reveal-fade-up" style="transition-delay: 300ms;">
+          <div class="relative w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 shadow-md border-4 border-white dark:border-slate-800">
+            <img src="assets/team4" alt="Zara Jenkins Support Head" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="font-display font-semibold text-lg text-slate-800 dark:text-white">Zara Jenkins</h4>
+          <p class="text-xs text-primary font-medium uppercase tracking-wider mt-1">Customer Relations Lead</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       QUALITY STANDARDS
+       ========================================== -->
+  <section class="py-20 bg-gray-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 reveal-on-scroll reveal-fade-left">
+          <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white leading-tight">Our Quality Guarantee</h2>
+          <p class="text-slate-500 dark:text-slate-400">
+            We adhere to rigorous quality checkpoints to ensure that fabrics are kept secure and returned cleaner than ever.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+              <span class="p-1 bg-green-150 rounded text-success mt-1">✓</span>
+              <p class="text-sm text-slate-600 dark:text-slate-300"><strong>Double Spotting Inspections:</strong> Stains are cross-checked before and after washing.</p>
+            </div>
+            <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+              <span class="p-1 bg-green-150 rounded text-success mt-1">✓</span>
+              <p class="text-sm text-slate-600 dark:text-slate-300"><strong>pH Balanced Soft Water:</strong> Helps maintain original color dye molecules and stretch tension.</p>
+            </div>
+            <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+              <span class="p-1 bg-green-150 rounded text-success mt-1">✓</span>
+              <p class="text-sm text-slate-600 dark:text-slate-300"><strong>Calibrated Pressing:</strong> Steam values tailored for cottons, satins, and wools specifically.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 reveal-on-scroll reveal-fade-right">
+          <div class="h-40 rounded-2xl overflow-hidden shadow-sm"><img src="assets/abtimg3" alt="Ironing garments" class="w-full h-full object-cover"></div>
+          <div class="h-40 rounded-2xl overflow-hidden shadow-sm"><img src="assets/abtimg4" alt="Folded laundry sheets" class="w-full h-full object-cover"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FINAL CTA
+       ========================================== -->
+  <section class="py-16 bg-white dark:bg-slate-950 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white">Save Time on Chores Today</h2>
+      <p class="text-slate-500 dark:text-slate-400">Join the thousands of happy residential clients who delegate their laundry bags weekly.</p>
+      <div>
+        <button class="open-booking-modal-btn ripple-btn px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg">
+          Book Pickup Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="bg-slate-900 text-slate-400 pt-12 sm:pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 mb-10 sm:mb-12">
+      <!-- Description -->
+      <div class="col-span-2 sm:col-span-2 md:col-span-3 lg:col-span-2 space-y-4">
+        <a href="index.html">
+           <div class="flex items-center text-white">
+          <svg class="h-8 w-8 text-primary mr-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="10" width="70" height="80" rx="12" stroke="currentColor" stroke-width="8" fill="none"/>
+            <line x1="25" y1="26" x2="75" y2="26" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="50" cy="60" r="24" stroke="currentColor" stroke-width="6" fill="none"/>
+          </svg>
+          <span class="font-display font-bold text-xl">FreshFold</span>
+        </div>
+        </a>
+       
+        <p class="text-sm text-slate-400 pr-6 leading-relaxed">
+          Premium dry cleaning and laundry pickup services tailored for busy lives, commercial uniforms, and luxury garments.
+        </p>
+        <!-- Social Icons -->
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Facebook">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Instagram">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Twitter">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-4">
+        <h4 class="font-display font-semibold text-white text-sm uppercase">Quick Links</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
+          <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+          <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+         <li><a href="404.html" class="hover:text-white transition-colors">404 Page</a></li>
+
+         
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="space-y-4">
+        <h4 class="font-display font-semibold text-white text-sm uppercase">Services</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="services.html" class="hover:text-white transition-colors">Laundry Wash</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Steam Pressing</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Commercial Linen</a></li>
+           <li><a href="pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="coming-soon.html" class="hover:text-white transition-colors">Coming Soon</a></li>
+          <li><button class="open-booking-modal-btn text-left hover:text-white transition-colors focus:outline-none">Book Now</button></li>
+        </ul>
+      </div>
+
+   
+
+      <!-- Newsletter Column -->
+      <div class="space-y-4">
+        <h4 class="font-display font-semibold text-white text-sm uppercase">Newsletter</h4>
+        <p class="text-xs leading-relaxed text-slate-400">Subscribe for special promo codes and fabric care updates.</p>
+        <form onsubmit="event.preventDefault(); alert('Subscribed to FreshFold Newsletter!');" class="space-y-2">
+          <input type="email" required placeholder="Your email address" class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white outline-none focus:border-primary placeholder-slate-500">
+          <button type="submit" class="w-full py-2 bg-gradient-to-r from-primary to-secondary text-white text-xs font-semibold rounded-lg hover:scale-102 transition-transform">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs">
+      <p>&copy; 2026 FreshFold Laundry Inc. All rights reserved. Premium responsive laundry designs.</p>
+    </div>
+  </footer>
+  <!-- ==========================================
+       BOOKING MODAL (Wizard Flow)
+       ========================================== -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 backdrop-blur-sm px-4">
+    <div class="bg-white dark:bg-slate-800 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-gray-100 dark:border-slate-700 flex flex-col max-h-[90vh]">
+      <div class="px-6 py-5 border-b border-gray-100 dark:border-slate-700 flex justify-between items-center bg-gray-50 dark:bg-slate-800/80">
+        <div>
+          <h3 class="font-display font-semibold text-lg text-slate-800 dark:text-white">Book Laundry Pickup</h3>
+          <p class="text-xs text-grayCustom mt-0.5">Fresh cleaning at your doorstep in 4 steps</p>
+        </div>
+        <button class="close-booking-modal-btn p-1.5 rounded-lg text-gray-450 hover:text-gray-700 dark:hover:text-white focus:outline-none"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+      </div>
+      <div class="px-6 py-4 bg-blue-50/50 dark:bg-slate-900/30 border-b border-gray-100 dark:border-slate-700 flex items-center justify-between">
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse"><span class="wizard-step-indicator w-6 h-6 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">1</span><span class="text-xs font-semibold text-slate-700 dark:text-slate-300">Schedule</span></div>
+        <div class="h-0.5 bg-gray-200 dark:bg-slate-700 flex-1 mx-2"></div>
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse"><span class="wizard-step-indicator w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center dark:bg-slate-700 dark:text-slate-400">2</span><span class="text-xs font-medium text-slate-400 dark:text-slate-500">Service</span></div>
+        <div class="h-0.5 bg-gray-200 dark:bg-slate-700 flex-1 mx-2"></div>
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse"><span class="wizard-step-indicator w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center dark:bg-slate-700 dark:text-slate-400">3</span><span class="text-xs font-medium text-slate-400 dark:text-slate-500">Details</span></div>
+        <div class="h-0.5 bg-gray-200 dark:bg-slate-700 flex-1 mx-2"></div>
+        <div class="flex items-center space-x-1.5 rtl:space-x-reverse"><span class="wizard-step-indicator w-6 h-6 rounded-full bg-gray-200 text-gray-500 text-xs font-bold flex items-center justify-center dark:bg-slate-700 dark:text-slate-400">4</span><span class="text-xs font-medium text-slate-400 dark:text-slate-500">Confirm</span></div>
+      </div>
+      <form id="booking-wizard-form" class="flex-1 overflow-y-auto px-6 py-6" onsubmit="event.preventDefault();">
+        <div id="wizard-form-content">
+          <div class="wizard-step space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Select Pickup Schedule</h4>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Preferred Pickup Date</label>
+              <input type="date" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-transparent text-slate-750 focus:border-primary outline-none text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Time Window Slot</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-transparent text-slate-700 dark:text-slate-300 focus:border-primary outline-none text-sm">
+                <option value="morning">Morning (08:00 AM - 12:00 PM)</option>
+                <option value="afternoon">Afternoon (12:00 PM - 04:00 PM)</option>
+              </select>
+            </div>
+          </div>
+          <div class="wizard-step hidden space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Select Laundry Services</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="border border-gray-200 dark:border-slate-700 p-3.5 rounded-xl flex items-center space-x-2.5 cursor-pointer">
+                <input type="checkbox" checked class="accent-primary h-4.5 w-4.5">
+                <span class="text-sm font-semibold dark:text-white">Wash & Fold</span>
+              </label>
+            </div>
+          </div>
+          <div class="wizard-step hidden space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Pickup Address</h4>
+            <textarea rows="3" required placeholder="Address detail..." class="w-full px-4 py-3 rounded-xl border bg-transparent text-slate-700 dark:text-slate-300 focus:border-primary outline-none text-sm resize-none"></textarea>
+          </div>
+          <div class="wizard-step hidden space-y-4">
+            <h4 class="font-display font-semibold text-slate-800 dark:text-white text-base">Order Confirmation</h4>
+            <div class="bg-gray-50 dark:bg-slate-900 p-4 rounded-2xl border space-y-3">
+              <div class="flex justify-between text-sm"><span class="text-slate-500">Estimated Cost</span><span class="font-bold text-primary">$35.00</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="wizard-success-content" class="hidden text-center py-10 space-y-4">
+          <div class="w-16 h-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center mx-auto text-3xl">✓</div>
+          <h3 class="font-display font-semibold text-xl">Pickup Confirmed!</h3>
+        </div>
+      </form>
+      <div id="wizard-actions" class="px-6 py-4 border-t border-gray-100 dark:border-slate-700 bg-gray-50 dark:bg-slate-800/80 flex justify-between items-center">
+        <button id="wizard-prev-btn" class="px-5 py-2.5 bg-white dark:bg-slate-700 border font-semibold text-sm rounded-xl text-slate-700 dark:text-slate-200 transition-colors invisible">Back</button>
+        <button id="wizard-next-btn" class="px-6 py-2.5 bg-primary text-white font-semibold text-sm rounded-xl hover:bg-blue-700 transition-colors shadow">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Float Buttons -->
+  <button id="whatsapp-widget-btn" class="fixed bottom-6 right-6 z-40 bg-emerald-500 text-white p-4 rounded-full shadow-2xl"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.019-5.117-2.877-6.979C16.582 1.9 14.1 1.079 11.999 1.079c-5.441 0-9.87 4.422-9.875 9.866-.001 1.8.49 3.548 1.418 5.12L2.53 21.444l4.117-1.29z"/></svg></button>
+  <div id="whatsapp-widget-box" class="fixed bottom-24 right-6 z-40 w-80 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border hidden flex-col">
+    <div class="bg-emerald-500 text-white p-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2"><div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">💬</div><div><h4 class="text-xs font-bold">FreshFold Support</h4></div></div>
+    </div>
+    <div class="p-4 bg-gray-50 dark:bg-slate-900 text-xs flex-1 max-h-48 overflow-y-auto"><div class="bg-white dark:bg-slate-800 p-2.5 rounded-xl max-w-[85%]">Hey! How can we help?</div></div>
+    <div class="p-3 bg-white dark:bg-slate-800 border-t flex items-center space-x-2">
+      <input id="whatsapp-widget-input" type="text" placeholder="Type message..." class="w-full bg-gray-50 dark:bg-slate-900 border rounded-full px-3 py-2 text-xs outline-none">
+      <button id="whatsapp-widget-send" class="bg-emerald-500 text-white p-2 rounded-full"><svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+    </div>
+  </div>
+
+  <button id="back-to-top" class="fixed bottom-6 left-6 z-40 bg-slate-900/80 dark:bg-slate-700/80 text-white p-3.5 rounded-full shadow-lg opacity-0 pointer-events-none translate-y-4 transition-all"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

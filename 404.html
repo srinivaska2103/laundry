@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='15' y='10' width='70' height='80' rx='12' stroke='%232563EB' stroke-width='8'/%3E%3Cline x1='25' y1='26' x2='75' y2='26' stroke='%232563EB' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='35' cy='20' r='4' fill='%232563EB'/%3E%3Ccircle cx='47' cy='20' r='2' fill='%232563EB'/%3E%3Ccircle cx='55' cy='20' r='2' fill='%232563EB'/%3E%3Ccircle cx='50' cy='60' r='24' stroke='%232563EB' stroke-width='6'/%3E%3Cpath d='M50 48C50 48 58 56.5 58 61.5C58 65.9183 54.4183 69.5 50 69.5C45.5817 69.5 42 65.9183 42 61.5C42 56.5 50 48 50 48Z' fill='%232563EB'/%3E%3C/svg%3E">
+  <title>Page Not Found - FreshFold Laundry</title>
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB',
+            secondary: '#38BDF8',
+            accent: '#0EA5E9',
+            success: '#22C55E',
+            text: '#1E293B',
+            darkBg: '#0F172A',
+            lightBg: '#F8FAFC',
+            grayCustom: '#64748B'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#F8FAFC] dark:bg-[#0F172A] text-[#1E293B] dark:text-slate-200 transition-colors duration-300 min-h-screen flex flex-col justify-between">
+
+  <!-- ==========================================
+       HEADER / NAVBAR
+       ========================================== -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 py-5 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center group">
+          <svg class="h-9 w-9 mr-2 transition-transform duration-300 group-hover:rotate-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="nav-logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2563EB" />
+                <stop offset="100%" stop-color="#38BDF8" />
+              </linearGradient>
+            </defs>
+            <rect x="15" y="10" width="70" height="80" rx="12" stroke="url(#nav-logo-grad)" stroke-width="8" fill="none"/>
+            <line x1="25" y1="26" x2="75" y2="26" stroke="url(#nav-logo-grad)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="50" cy="60" r="24" stroke="url(#nav-logo-grad)" stroke-width="6" fill="none"/>
+            <path d="M50 48C50 48 58 56.5 58 61.5C58 65.9183 54.4183 69.5 50 69.5C45.5817 69.5 42 65.9183 42 61.5C42 56.5 50 48 50 48Z" fill="url(#nav-logo-grad)"/>
+          </svg>
+          <span class="font-display font-semibold text-xl tracking-tight text-slate-800 dark:text-white group-hover:text-primary transition-colors">FreshFold</span>
+        </a>
+
+        <!-- Links -->
+        <!-- <nav class="hidden lg:flex items-center space-x-1">
+          <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+          <a href="home2.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home 2</a>
+          <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About Us</a>
+          <a href="services.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Services</a>
+          <a href="gallery.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Gallery</a>
+          <a href="pricing.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Pricing</a>
+          <a href="contact.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
+          <a href="portal.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">User Portal</a>
+        </nav> -->
+
+        <!-- Right Side Controls -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <!-- LTR/RTL Toggle -->
+          <button class="dir-toggle-btn p-2 rounded-lg text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-200" aria-label="Toggle language direction">
+            <span class="dir-label text-xs font-bold uppercase">RTL</span>
+          </button>
+          <!-- Light/Dark Toggle -->
+          <button class="theme-toggle-btn p-2 rounded-lg text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-200" aria-label="Toggle theme">
+            <!-- Moon Icon (Light Mode Active) -->
+            <svg class="theme-moon-icon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <!-- Sun Icon (Dark Mode Active) -->
+            <svg class="theme-sun-icon h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707m12.728-12.728l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+            </svg>
+          </button>
+          
+          <button class="open-booking-modal-btn ripple-btn hidden sm:inline-flex px-5 py-2.5 bg-gradient-to-r from-primary to-secondary text-white text-sm font-semibold rounded-full shadow-lg">
+            Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       404 CENTRAL CONTENT WITH BG IMAGE
+       ========================================== -->
+  <main class="flex-1 w-full flex items-center justify-center pt-32 pb-20 px-6 text-center flex-col relative overflow-hidden bg-mesh min-h-[calc(100vh-130px)]">
+    <div class="max-w-2xl mx-auto z-10 flex flex-col items-center justify-center space-y-6 w-full">
+      <!-- Socks/Bubbles floating around machine SVG -->
+      <svg class="w-48 h-48 text-primary dark:text-sky-300 drop-shadow-lg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Bubbles -->
+        <circle cx="50" cy="50" r="8" fill="#38BDF8" fill-opacity="0.3"/>
+        <circle cx="150" cy="40" r="12" fill="#38BDF8" fill-opacity="0.2"/>
+        <circle cx="160" cy="120" r="6" fill="#38BDF8" fill-opacity="0.4"/>
+        <!-- Washing Machine body -->
+        <rect x="50" y="70" width="100" height="120" rx="10" stroke="currentColor" stroke-width="6"/>
+        <!-- Drum window -->
+        <circle cx="100" cy="135" r="32" stroke="currentColor" stroke-width="5" fill="none"/>
+        <!-- Floating sock inside drum -->
+        <path d="M92 125 C92 125 105 130 102 145 C101 148 108 147 110 142 C112 135 102 120 92 125Z" fill="#38BDF8"/>
+        <!-- Water line inside drum -->
+        <path d="M72 145 Q100 155 128 145" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+
+      <h1 class="font-display font-semibold text-5xl text-slate-800 dark:text-white">Lost in the Wash</h1>
+      <p class="text-slate-600 dark:text-slate-400 max-w-sm mx-auto">Oh no! It looks like the page you are searching for got mixed up in our high-spin laundry cycles.</p>
+      
+      <div>
+        <a href="index.html" class="inline-flex items-center px-6 py-3.5 bg-gradient-to-r from-primary to-secondary text-white font-semibold text-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
+          Return to Home Page
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
