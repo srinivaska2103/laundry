@@ -95,7 +95,7 @@
           </button>
 
           <!-- Action Buttons -->
-          <a href="login.html" class="text-xs xl:text-sm font-semibold text-gray-700 dark:text-slate-200 hover:text-primary transition-colors">Login</a>
+<a href="login.html" class="inline-block px-4 py-2 text-xs xl:text-sm font-semibold text-secondary bg-secondary/10 hover:bg-secondary/20 rounded-full transition-colors duration-300">Login</a>
           <a href="booking.html" class="ripple-btn px-4 xl:px-5 py-2 xl:py-2.5 bg-gradient-to-r from-primary to-secondary text-white text-xs xl:text-sm font-semibold rounded-full shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 hover:-translate-y-0.5 transition-all duration-300">
             Book Now
           </a>
@@ -141,8 +141,8 @@
       <a href="portal.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2">User Portal</a>
       
       <div class="pt-6 flex flex-col space-y-4">
-        <a href="login.html" class="w-full text-center py-3 border border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-200 font-semibold rounded-full">Login</a>
-        <a href="booking.html" class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg text-center">Book Now</a>
+<a href="login.html" class="inline-block px-4 py-2 text-xs xl:text-sm font-semibold text-secondary bg-secondary/10 hover:bg-secondary/20 rounded-full transition-colors duration-300">Login</a>
+          <a href="booking.html" class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg text-center">Book Now</a>
       </div>
 
       <!-- Mobile Toggles Inside Menu Bar -->
@@ -165,28 +165,56 @@
   <!-- ==========================================
        BREADCRUMB / HERO SECTION WITH BG IMAGE
        ========================================== -->
- <section class="relative overflow-hidden pt-32 pb-16 bg-white dark:bg-slate-900 transition-colors duration-300">
+<section class="relative overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-24 bg-white dark:bg-slate-900 transition-colors duration-300">
+  <!-- Decorative Background Blobs for Visual Depth -->
+  <div class="absolute top-0 left-1/4 w-72 h-72 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+  <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
       
-      <!-- Left: Content -->
-      <div class="text-center lg:text-left space-y-4">
-        <h1 class="font-display font-semibold text-4xl sm:text-5xl text-slate-900 dark:text-white leading-tight">
-          Our Gallery
+      <!-- Left Column: Content & Actions (Spans 7 tracks on large viewports) -->
+      <div class="lg:col-span-7 text-center lg:text-left space-y-6 reveal-on-scroll reveal-fade-left">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary dark:bg-primary/20">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          Inside VEXA TECH Operations
+        </span>
+
+        <h1 class="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl text-slate-900 dark:text-white leading-tight">
+          Our <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Visual Gallery</span>
         </h1>
-        <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0">
-          Explore our high-end sorting facilities, delivery fleets, and fabric restoration results.
+        
+        <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+          Explore our high-end sorting facilities, delivery fleets, and fabric restoration results. We maintain absolute transparency across our entire clean-handling pipeline.
         </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <button class="open-booking-modal-btn ripple-btn w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 active:scale-95 transition-all duration-300 text-center text-sm">
+            Book a Pickup Now
+          </button>
+          
+          <a href="#full-gallery" class="group w-full sm:w-auto px-6 py-3.5 text-secondary border border-secondary hover:bg-secondary hover:text-white text-sm font-semibold text-center rounded-full transition-all duration-300 flex items-center justify-center gap-2">
+            View Full Gallery
+            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
       </div>
 
-      <!-- Right: Image -->
-      <div class="relative flex justify-center lg:justify-end">
-        <div class="relative w-full max-w-[500px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 dark:border-slate-800">
+      <!-- Right Column: Premium Image Visual (Spans 5 tracks on large viewports) -->
+      <div class="lg:col-span-5 relative flex justify-center lg:justify-end reveal-on-scroll reveal-fade-right">
+        <div class="relative w-full max-w-[500px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 dark:border-slate-800 transition-transform duration-500 hover:scale-[1.015]">
           <img 
             src="assets/galleryhero" 
-            alt="Our Gallery" 
+            alt="Our sorting and fabric treatment facilities" 
             class="w-full h-full object-cover"
           >
+          <!-- Subtle lighting overlay gradient -->
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/10 to-transparent pointer-events-none"></div>
         </div>
       </div>
 
@@ -213,81 +241,225 @@
        ========================================== -->
   <section class="py-20 bg-[#F8FAFC] dark:bg-[#0F172A]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid">
-        
-        <!-- Item 1 -->
-        <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="facility">
-          <div class="relative h-64 overflow-hidden image-zoom-container">
-            <img src="assets/Commercial Wash Drum setup" alt="Washing machines facility" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-bold text-sm">👁️ View Image</div>
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold text-slate-800 dark:text-white">Commercial Wash Drum setup</h4>
-            <p class="text-xs text-grayCustom mt-1">Facility setup</p>
-          </div>
+   <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid">
+    
+    <!-- Item 1 -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="facility">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Commercial Wash Drum setup" alt="Washing machines facility" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
         </div>
-
-        <!-- Item 2 -->
-        <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="services">
-          <div class="relative h-64 overflow-hidden image-zoom-container">
-            <img src="assets/Elite Dry Cleaning Hangers" alt="Hanger Dry Cleaning" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-bold text-sm">👁️ View Image</div>
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold text-slate-800 dark:text-white">Elite Dry Cleaning Hangers</h4>
-            <p class="text-xs text-grayCustom mt-1">Services</p>
-          </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="commercial">
-          <div class="relative h-64 overflow-hidden image-zoom-container">
-            <img src="assets/Bulk Spa Linen folding" alt="Commercial Laundry folded" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-bold text-sm">👁️ View Image</div>
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold text-slate-800 dark:text-white">Bulk Spa Linen folding</h4>
-            <p class="text-xs text-grayCustom mt-1">Commercial</p>
-          </div>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="facility">
-          <div class="relative h-64 overflow-hidden image-zoom-container">
-            <img src="assets/Vacuum Steam Press stations" alt="Ironing station Facility" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-bold text-sm">👁️ View Image</div>
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold text-slate-800 dark:text-white">Vacuum Steam Press stations</h4>
-            <p class="text-xs text-grayCustom mt-1">Facility setup</p>
-          </div>
-        </div>
-
-        <!-- Item 5 -->
-        <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="services">
-          <div class="relative h-64 overflow-hidden image-zoom-container">
-            <img src="assets/Sneaker Restoration wash" alt="Sneaker Cleaning" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-bold text-sm">👁️ View Image</div>
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold text-slate-800 dark:text-white">Sneaker Restoration wash</h4>
-            <p class="text-xs text-grayCustom mt-1">Services</p>
-          </div>
-        </div>
-
-        <!-- Item 6 -->
-        <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="commercial">
-          <div class="relative h-64 overflow-hidden image-zoom-container">
-            <img src="assets/Restaurant Chef Uniform presses" alt="Chef uniforms wash" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-bold text-sm">👁️ View Image</div>
-          </div>
-          <div class="p-4">
-            <h4 class="font-semibold text-slate-800 dark:text-white">Restaurant Chef Uniform presses</h4>
-            <p class="text-xs text-grayCustom mt-1">Commercial</p>
-          </div>
-        </div>
-
       </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Commercial Wash Drum setup</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Facility setup</p>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="services">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Elite Dry Cleaning Hangers" alt="Hanger Dry Cleaning" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Elite Dry Cleaning Hangers</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Services</p>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="commercial">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Bulk Spa Linen folding" alt="Commercial Laundry folded" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Bulk Spa Linen folding</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Commercial</p>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="facility">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Vacuum Steam Press stations" alt="Ironing station Facility" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Vacuum Steam Press stations</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Facility setup</p>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="services">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Sneaker Restoration wash" alt="Sneaker Cleaning" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Sneaker Restoration wash</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Services</p>
+      </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="commercial">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Restaurant Chef Uniform presses" alt="Chef uniforms wash" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Restaurant Chef Uniform presses</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Commercial</p>
+      </div>
+    </div>
+
+    <!-- Item 7 (Extra - Facility) -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="facility">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Eco Water Filtration Loop" alt="Water filtering technology" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Eco Water Filtration Loop</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Facility setup</p>
+      </div>
+    </div>
+
+    <!-- Item 8 (Extra - Services) -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="services">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Delicate Silk & Couture Care" alt="Delicate dress processing" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Delicate Silk & Couture Care</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Services</p>
+      </div>
+    </div>
+
+    <!-- Item 9 (Extra - Commercial) -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="commercial">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Hospitality & Hotel Linens" alt="Hotel sheets ready for dispatch" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Hospitality & Hotel Linens</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Commercial</p>
+      </div>
+    </div>
+
+    <!-- Item 10 (Extra - Facility) -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="facility">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Intelligent QR Sorting Line" alt="Laundry tracking tags" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Intelligent QR Sorting Line</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Facility setup</p>
+      </div>
+    </div>
+
+    <!-- Item 11 (Extra - Services) -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="services">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Hypoallergenic Treatment" alt="Pouring clear organic liquids" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Hypoallergenic Treatment</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Services</p>
+      </div>
+    </div>
+
+    <!-- Item 12 (Extra - Commercial) -->
+    <div class="gallery-item bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-gray-150 dark:border-slate-700 shadow-sm group cursor-pointer" data-category="commercial">
+      <div class="relative h-64 overflow-hidden image-zoom-container">
+        <img src="assets/Gym & Wellness Center Towels" alt="Rolled white fitness towels" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white font-semibold text-sm gap-2">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+          View Image
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold text-slate-800 dark:text-white transition-colors group-hover:text-primary">Gym & Wellness Center Towels</h4>
+        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1">Commercial</p>
+      </div>
+    </div>
+
+</div>
     </div>
   </section>
 

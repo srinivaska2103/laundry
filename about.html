@@ -95,8 +95,8 @@
           </button>
 
           <!-- Action Buttons -->
-          <a href="login.html" class="text-xs xl:text-sm font-semibold text-gray-700 dark:text-slate-200 hover:text-primary transition-colors">Login</a>
-          <a href="booking.html" class="ripple-btn px-4 xl:px-5 py-2 xl:py-2.5 bg-gradient-to-r from-primary to-secondary text-white text-xs xl:text-sm font-semibold rounded-full shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 hover:-translate-y-0.5 transition-all duration-300">
+<a href="login.html" class="inline-block px-4 py-2 text-xs xl:text-sm font-semibold text-secondary bg-secondary/10 hover:bg-secondary/20 rounded-full transition-colors duration-300">Login</a>  
+        <a href="booking.html" class="ripple-btn px-4 xl:px-5 py-2 xl:py-2.5 bg-gradient-to-r from-primary to-secondary text-white text-xs xl:text-sm font-semibold rounded-full shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 hover:-translate-y-0.5 transition-all duration-300">
             Book Now
           </a>
         </div>
@@ -142,7 +142,7 @@
       <a href="portal.html" class="text-xl font-medium text-gray-700 dark:text-slate-300 py-2">User Portal</a>
       
       <div class="pt-6 flex flex-col space-y-4">
-        <a href="login.html" class="w-full text-center py-3 border border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-200 font-semibold rounded-full">Login</a>
+<a href="login.html" class="inline-block px-4 py-2 text-xs xl:text-sm font-semibold text-secondary bg-secondary/10 hover:bg-secondary/20 rounded-full transition-colors duration-300">Login</a>
         <a href="booking.html" class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg text-center">Book Now</a>
       </div>
 
@@ -332,43 +332,67 @@
   <!-- ==========================================
        MILESTONE TIMELINE
        ========================================== -->
-  <section class="py-20 bg-gray-50 dark:bg-slate-800">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll reveal-fade-up">
-        <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white mb-4">Milestones & History</h2>
-        <p class="text-slate-500 dark:text-slate-400">Our journey from a single laundry van to an enterprise laundry leader.</p>
-      </div>
+<section class="py-20 bg-gray-50 dark:bg-slate-800 overflow-hidden">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll reveal-fade-up">
+      <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white mb-4">Milestones & History</h2>
+      <p class="text-slate-500 dark:text-slate-400">Our journey from a single laundry van to an enterprise laundry leader.</p>
+    </div>
 
-      <div class="relative border-l-2 border-primary/20 dark:border-slate-750 ml-4 md:ml-0 md:border-l-0 md:space-y-12">
+    <!-- Timeline Wrapper -->
+    <div class="relative ml-4 md:ml-0">
+      
+      <!-- Central Vertical Line (Visible on mobile left, desktop center) -->
+      <div class="absolute top-0 bottom-0 left-0 md:left-1/2 w-0.5 bg-primary/20 dark:bg-slate-700 -translate-x-1/2"></div>
+      
+      <!-- Timeline Items Container -->
+      <div class="space-y-12 md:space-y-16">
         
-        <!-- Timeline Item 1 -->
-        <div class="relative pl-8 md:grid md:grid-cols-12 md:gap-8 items-center reveal-on-scroll reveal-fade-up">
-          <div class="absolute top-1/2 left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2 border-4 border-white dark:border-slate-800 z-10"></div>
-          <div class="md:col-span-5 md:text-right text-sm font-display font-bold text-primary">2011</div>
-          <div class="md:col-span-2"></div>
-          <div class="md:col-span-5 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-750 shadow-sm">
+        <!-- Timeline Item 1 (Right on Desktop) -->
+        <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-12 md:gap-8 items-center reveal-on-scroll reveal-fade-up">
+          <!-- Central Dot -->
+          <div class="absolute top-6 md:top-1/2 left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2 border-4 border-white dark:border-slate-800 z-10 shadow"></div>
+          
+          <!-- Year (Desktop Left) -->
+          <div class="md:col-span-5 md:text-right text-sm font-display font-bold text-primary mb-2 md:mb-0">2011</div>
+          <div class="hidden md:block md:col-span-2"></div>
+          
+          <!-- Card (Desktop Right) -->
+          <div class="md:col-span-5 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 shadow-sm">
             <h4 class="font-semibold text-slate-800 dark:text-white">FreshFold Launch</h4>
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Started with a single delivery vehicle and dry cleaning sorting facility in West End.</p>
           </div>
         </div>
 
-        <!-- Timeline Item 2 -->
-        <div class="relative pl-8 md:grid md:grid-cols-12 md:gap-8 items-center reveal-on-scroll reveal-fade-up">
-          <div class="absolute top-1/2 left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2 border-4 border-white dark:border-slate-800 z-10"></div>
-          <div class="md:col-span-5 md:order-last text-sm font-display font-bold text-primary">2015</div>
-          <div class="md:col-span-2"></div>
-          <div class="md:col-span-5 md:order-first bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-750 shadow-sm md:text-right">
+        <!-- Timeline Item 2 (Left on Desktop) -->
+        <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-12 md:gap-8 items-center reveal-on-scroll reveal-fade-up">
+          <!-- Central Dot -->
+          <div class="absolute top-6 md:top-1/2 left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2 border-4 border-white dark:border-slate-800 z-10 shadow"></div>
+          
+          <!-- Year (Desktop Right) -->
+          <div class="md:col-span-5 md:order-last text-sm font-display font-bold text-primary mb-2 md:mb-0">2015</div>
+          <div class="hidden md:block md:col-span-2"></div>
+          
+          <!-- Card (Desktop Left) -->
+          <div class="md:col-span-5 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 shadow-sm md:text-right">
             <h4 class="font-semibold text-slate-800 dark:text-white">Eco Facility expansion</h4>
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Constructed our solar-powered central washing plant, reducing laundry emissions by 40%.</p>
           </div>
         </div>
 
-        <!-- Timeline Item 3 -->
-        <div class="relative pl-8 md:grid md:grid-cols-12 md:gap-8 items-center reveal-on-scroll reveal-fade-up">
-          <div class="absolute top-1/2 left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2 border-4 border-white dark:border-slate-800 z-10"></div>
-          <div class="md:col-span-5 md:text-right text-sm font-display font-bold text-primary">2019</div>
-          <div class="md:col-span-2"></div>
-          <div class="md:col-span-5 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-750 shadow-sm">
+        <!-- Timeline Item 3 (Right on Desktop) -->
+        <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-12 md:gap-8 items-center reveal-on-scroll reveal-fade-up">
+          <!-- Central Dot -->
+          <div class="absolute top-6 md:top-1/2 left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2 border-4 border-white dark:border-slate-800 z-10 shadow"></div>
+          
+          <!-- Year (Desktop Left) -->
+          <div class="md:col-span-5 md:text-right text-sm font-display font-bold text-primary mb-2 md:mb-0">2019</div>
+          <div class="hidden md:block md:col-span-2"></div>
+          
+          <!-- Card (Desktop Right) -->
+          <div class="md:col-span-5 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-150 dark:border-slate-700 shadow-sm">
             <h4 class="font-semibold text-slate-800 dark:text-white">Mobile Portal launch</h4>
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Rolled out native iOS and Android apps to automate delivery tracking and address saves.</p>
           </div>
@@ -376,41 +400,49 @@
 
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ==========================================
        GREEN INITIATIVES / ECO OPERATIONS
        ========================================== -->
-  <section class="py-20 bg-emerald-50/50 dark:bg-emerald-950/10 border-y border-emerald-100/50 dark:border-emerald-900/30">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Carbon-Neutral Operations</span>
-        <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white mt-2">Our Eco-Friendly Laundry Blueprint</h2>
-        <p class="text-slate-500 dark:text-slate-400 mt-3 text-sm sm:text-base">We prove that laundry doesn't have to cost the Earth. We integrate de-mineralized washing setups with clean energy systems.</p>
+<section class="py-20 bg-primary/5 dark:bg-primary/10 border-y border-primary/10 dark:border-primary/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs font-bold uppercase tracking-wider text-primary dark:text-secondary">Carbon-Neutral Operations</span>
+      <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white mt-2">Our Eco-Friendly Laundry Blueprint</h2>
+      <p class="text-slate-500 dark:text-slate-400 mt-3 text-sm sm:text-base">We prove that laundry doesn't have to cost the Earth. We integrate de-mineralized washing setups with clean energy systems.</p>
+    </div>
+
+    <!-- Metrics Grid -->
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      
+      <!-- Metric 1 -->
+      <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-primary/10 dark:border-slate-800 shadow-sm hover-lift">
+        <span class="font-display font-bold text-4xl sm:text-5xl text-primary dark:text-secondary">85%</span>
+        <h4 class="font-semibold text-slate-800 dark:text-white text-base mt-4">Water Recycled</h4>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Closed-loop de-mineralized water systems filter and recycle rinse cycles, saving millions of gallons annually.</p>
+      </div>
+      
+      <!-- Metric 2 -->
+      <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-primary/10 dark:border-slate-800 shadow-sm hover-lift" style="transition-delay: 100ms;">
+        <span class="font-display font-bold text-4xl sm:text-5xl text-primary dark:text-secondary">100%</span>
+        <h4 class="font-semibold text-slate-800 dark:text-white text-base mt-4">Solar Driven</h4>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Our central sorting facilities run entirely on clean solar power arrays, eliminating greenhouse gas outputs.</p>
+      </div>
+      
+      <!-- Metric 3 -->
+      <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-primary/10 dark:border-slate-800 shadow-sm hover-lift" style="transition-delay: 200ms;">
+        <span class="font-display font-bold text-4xl sm:text-5xl text-primary dark:text-secondary">Zero</span>
+        <h4 class="font-semibold text-slate-800 dark:text-white text-base mt-4">Hanger Waste</h4>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Through our active recycle program, customers return metal hangers and plastic shields for sanitization and reuse.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <!-- Metric 1 -->
-        <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-emerald-100 dark:border-slate-800 shadow-sm hover-lift">
-          <span class="font-display font-bold text-4xl sm:text-5xl text-emerald-600 dark:text-emerald-400">85%</span>
-          <h4 class="font-semibold text-slate-800 dark:text-white text-base mt-4">Water Recycled</h4>
-          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Closed-loop de-mineralized water systems filter and recycle rinse cycles, saving millions of gallons annually.</p>
-        </div>
-        <!-- Metric 2 -->
-        <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-emerald-100 dark:border-slate-800 shadow-sm hover-lift" style="transition-delay: 100ms;">
-          <span class="font-display font-bold text-4xl sm:text-5xl text-emerald-600 dark:text-emerald-400">100%</span>
-          <h4 class="font-semibold text-slate-800 dark:text-white text-base mt-4">Solar Driven</h4>
-          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Our central sorting facilities run entirely on clean solar power arrays, eliminating greenhouse gas outputs.</p>
-        </div>
-        <!-- Metric 3 -->
-        <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-emerald-100 dark:border-slate-800 shadow-sm hover-lift" style="transition-delay: 200ms;">
-          <span class="font-display font-bold text-4xl sm:text-5xl text-emerald-600 dark:text-emerald-400">Zero</span>
-          <h4 class="font-semibold text-slate-800 dark:text-white text-base mt-4">Hanger Waste</h4>
-          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">Through our active recycle program, customers return metal hangers and plastic shields for sanitization and reuse.</p>
-        </div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ==========================================
        CUSTOMER CARE GUARANTEE
@@ -502,51 +534,169 @@
   <!-- ==========================================
        QUALITY STANDARDS
        ========================================== -->
-  <section class="py-20 bg-gray-50 dark:bg-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-6 reveal-on-scroll reveal-fade-left">
-          <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white leading-tight">Our Quality Guarantee</h2>
-          <p class="text-slate-500 dark:text-slate-400">
-            We adhere to rigorous quality checkpoints to ensure that fabrics are kept secure and returned cleaner than ever.
-          </p>
-          <div class="space-y-4">
-            <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
-              <span class="p-1 bg-green-150 rounded text-success mt-1">✓</span>
-              <p class="text-sm text-slate-600 dark:text-slate-300"><strong>Double Spotting Inspections:</strong> Stains are cross-checked before and after washing.</p>
-            </div>
-            <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
-              <span class="p-1 bg-green-150 rounded text-success mt-1">✓</span>
-              <p class="text-sm text-slate-600 dark:text-slate-300"><strong>pH Balanced Soft Water:</strong> Helps maintain original color dye molecules and stretch tension.</p>
-            </div>
-            <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
-              <span class="p-1 bg-green-150 rounded text-success mt-1">✓</span>
-              <p class="text-sm text-slate-600 dark:text-slate-300"><strong>Calibrated Pressing:</strong> Steam values tailored for cottons, satins, and wools specifically.</p>
-            </div>
+ <section class="py-20 bg-gray-50 dark:bg-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Content Column -->
+      <div class="space-y-6 reveal-on-scroll reveal-fade-left">
+        <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white leading-tight">Our Quality Guarantee</h2>
+        <p class="text-slate-500 dark:text-slate-400">
+          We adhere to rigorous quality checkpoints to ensure that fabrics are kept secure and returned cleaner than ever.
+        </p>
+        
+        <!-- Feature List -->
+        <div class="space-y-4">
+          
+          <!-- Bullet 1 -->
+          <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+            <span class="flex items-center justify-center w-6 h-6 bg-primary/10 dark:bg-primary/20 rounded text-primary text-xs font-bold mt-0.5 shrink-0">✓</span>
+            <p class="text-sm text-slate-600 dark:text-slate-300"><strong>Double Spotting Inspections:</strong> Stains are cross-checked before and after washing.</p>
           </div>
-        </div>
-        <div class="grid grid-cols-2 gap-4 reveal-on-scroll reveal-fade-right">
-          <div class="h-40 rounded-2xl overflow-hidden shadow-sm"><img src="assets/abtimg3" alt="Ironing garments" class="w-full h-full object-cover"></div>
-          <div class="h-40 rounded-2xl overflow-hidden shadow-sm"><img src="assets/abtimg4" alt="Folded laundry sheets" class="w-full h-full object-cover"></div>
+          
+          <!-- Bullet 2 -->
+          <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+            <span class="flex items-center justify-center w-6 h-6 bg-primary/10 dark:bg-primary/20 rounded text-primary text-xs font-bold mt-0.5 shrink-0">✓</span>
+            <p class="text-sm text-slate-600 dark:text-slate-300"><strong>pH Balanced Soft Water:</strong> Helps maintain original color dye molecules and stretch tension.</p>
+          </div>
+          
+          <!-- Bullet 3 -->
+          <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+            <span class="flex items-center justify-center w-6 h-6 bg-primary/10 dark:bg-primary/20 rounded text-primary text-xs font-bold mt-0.5 shrink-0">✓</span>
+            <p class="text-sm text-slate-600 dark:text-slate-300"><strong>Calibrated Pressing:</strong> Steam values tailored for cottons, satins, and wools specifically.</p>
+          </div>
+          
         </div>
       </div>
+      
+      <!-- Image Grid Column -->
+      <div class="grid grid-cols-2 gap-4 reveal-on-scroll reveal-fade-right">
+        <div class="h-40 rounded-2xl overflow-hidden shadow-sm"><img src="assets/abtimg3" alt="Ironing garments" class="w-full h-full object-cover"></div>
+        <div class="h-40 rounded-2xl overflow-hidden shadow-sm"><img src="assets/abtimg4" alt="Folded laundry sheets" class="w-full h-full object-cover"></div>
+      </div>
+      
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ==========================================
        FINAL CTA
        ========================================== -->
-  <section class="py-16 bg-white dark:bg-slate-950 text-center">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-      <h2 class="font-display font-semibold text-3xl text-slate-800 dark:text-white">Save Time on Chores Today</h2>
-      <p class="text-slate-500 dark:text-slate-400">Join the thousands of happy residential clients who delegate their laundry bags weekly.</p>
-      <div>
-        <button class="open-booking-modal-btn ripple-btn px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg">
-          Book Pickup Now
-        </button>
+<section class="py-20 lg:py-28 bg-gradient-to-b from-white to-gray-50 dark:from-slate-950 dark:to-slate-900 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      
+      <!-- Left Column: High-Conversion Marketing Content -->
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal-on-scroll reveal-fade-left">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary dark:bg-primary/20">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8z"/>
+          </svg>
+          Premium Laundry Service
+        </span>
+        
+        <h2 class="font-display font-semibold text-3xl sm:text-4xl lg:text-5xl text-slate-800 dark:text-white leading-tight">
+          Save Time on Chores. <br class="hidden sm:inline" />
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Delegate Your Laundry Today.</span>
+        </h2>
+        
+        <p class="text-slate-500 dark:text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
+          Join thousands of happy residential clients who reclaim 4+ hours every single week. We pick up, wash, iron, and deliver back to your doorstep in 24 hours.
+        </p>
+
+        <!-- Dynamic Micro-Steps -->
+        <div class="grid sm:grid-cols-3 gap-6 sm:gap-4 pt-4 text-left max-w-xl mx-auto lg:mx-0">
+          <div class="group flex items-center space-x-3">
+            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white text-sm font-bold shrink-0 transition-all duration-300">1</span>
+            <span class="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors duration-300">Bag it up</span>
+          </div>
+          <div class="group flex items-center space-x-3">
+            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white text-sm font-bold shrink-0 transition-all duration-300">2</span>
+            <span class="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors duration-300">We collect & clean</span>
+          </div>
+          <div class="group flex items-center space-x-3">
+            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white text-sm font-bold shrink-0 transition-all duration-300">3</span>
+            <span class="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors duration-300">Fresh delivery</span>
+          </div>
+        </div>
+
+        <!-- Action Area -->
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <button class="open-booking-modal-btn ripple-btn w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 active:scale-95 transition-all duration-300 text-center">
+            Book Pickup Now
+          </button>
+          <a href="#pricing" class="group w-full sm:w-auto px-6 py-3.5 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-semibold text-center transition-colors duration-300 flex items-center justify-center gap-1">
+            View Pricing & Plans 
+            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
       </div>
+
+      <!-- Right Column: Visual Trust Panel -->
+      <div class="lg:col-span-5 reveal-on-scroll reveal-fade-right">
+        <div class="relative max-w-md mx-auto">
+          <!-- Decorative Background Blobs -->
+          <div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+          <div class="absolute -bottom-12 -right-12 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+
+          <!-- Trust Aggregator Card Block -->
+          <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800/80 p-6 sm:p-8 rounded-3xl shadow-xl space-y-6">
+            
+            <!-- Trust Metric 1 -->
+            <div class="group flex items-center space-x-4 p-2 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors duration-300">
+              <div class="p-3 bg-primary/10 rounded-2xl text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
+                <!-- Shipping / Truck Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m12-4h3m-3 0a9 9 0 01-9-9m9 9H3m9.93 0a2 2 0 001.664-1.05l1.255-2.51A2 2 0 0118.63 11H21v3a1 1 0 01-1 1h-1"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 dark:text-white text-sm sm:text-base">Free Doorstep Pickup</h4>
+                <p class="text-xs text-slate-400 dark:text-slate-500">Contactless collection options available</p>
+              </div>
+            </div>
+
+            <hr class="border-slate-100 dark:border-slate-800/80" />
+
+            <!-- Trust Metric 2 -->
+            <div class="group flex items-center space-x-4 p-2 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors duration-300">
+              <div class="p-3 bg-primary/10 rounded-2xl text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
+                <!-- Clock / Time Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 dark:text-white text-sm sm:text-base">24-Hour Turnaround</h4>
+                <p class="text-xs text-slate-400 dark:text-slate-500">Standard for all wash & fold orders</p>
+              </div>
+            </div>
+
+            <hr class="border-slate-100 dark:border-slate-800/80" />
+
+            <!-- Social Proof Facepile Counter -->
+            <div class="pt-2 text-center sm:text-left">
+              <div class="flex items-center justify-center sm:justify-start -space-x-2 mb-3">
+                <img class="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="User 1">
+                <img class="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="User 2">
+                <img class="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="User 3">
+                <div class="w-8 h-8 rounded-full bg-primary text-white border-2 border-white dark:border-slate-900 flex items-center justify-center text-[10px] font-bold font-display shadow-md animate-pulse">+4k</div>
+              </div>
+              <p class="text-xs text-slate-500 dark:text-slate-400">
+                Rated <strong class="text-slate-800 dark:text-white font-semibold">4.9/5 stars</strong> by local residents.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ==========================================
        FOOTER
