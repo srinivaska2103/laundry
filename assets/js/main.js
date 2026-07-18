@@ -121,11 +121,11 @@ function initStickyHeader() {
 
   const scrollHandler = () => {
     if (window.scrollY > 20) {
-      header.classList.add('bg-white/95', 'dark:bg-slate-900/95', 'shadow-md', 'backdrop-blur-md', 'py-3');
-      header.classList.remove('bg-transparent', 'py-5');
+      header.classList.add('bg-white/95', 'dark:bg-slate-900/95', 'shadow-md', 'backdrop-blur-md');
+      header.classList.remove('bg-transparent');
     } else {
-      header.classList.remove('bg-white/95', 'dark:bg-slate-900/95', 'shadow-md', 'backdrop-blur-md', 'py-3');
-      header.classList.add('bg-transparent', 'py-5');
+      header.classList.remove('bg-white/95', 'dark:bg-slate-900/95', 'shadow-md', 'backdrop-blur-md');
+      header.classList.add('bg-transparent');
     }
   };
 
